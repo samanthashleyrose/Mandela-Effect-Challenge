@@ -5,7 +5,7 @@ const startBtn = document.querySelector('#startBtn')
 
 // f Start Quiz button clicked
 startBtn.onclick = () => (
-    questionBox.classList.add("activebox")
+    questionBox.classList.add("activeQuestions") // show the question box
 )
 
 // connect to h3 timer in HTML
