@@ -1,0 +1,35 @@
+:root {
+    --main-text-color: black;
+    --question-color: green;
+    --question-font-size: 1.3rem;
+    --answer-button-color: rgb(156, 199, 156);
+    --answer-button-font-size: 1.2rem;
+    --all-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+header {
+    text-align: center;
+    font-family: var(--all-font-family)
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: var(--question-font-size);
+    font-family: var(--all-font-family);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+button {
+    font-size: var(--answer-button-font-size);
+}
