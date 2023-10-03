@@ -10,12 +10,42 @@
 </head>
 <body>
     <!--HEADER-->
-    <header>
+    <header class="start-end-screen-box">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-        <button>Start Quiz</button>
+        <button id="startBtn">Start Quiz</button>
     </header>
     <!--QUESTIONS-->
+    <main>
+        <section class="question-box">
+            <header>
+                <div>
+                    <h4 id="#timer"></h4>
+                </div>
+                <div class="question-asked">
+                    <h2>Is this a question?</h2>
+                </div>
+            </header>
+            <div class="possible-answers">
+                <ul>
+                <button class="choiceA">
+                    <ul>A) one answer here</ul>
+                </button>
+                <button class="choiceB">
+                    <ul>B) one answer here</ul>
+                </button>
+                <button class="choiceC">
+                    <ul>C) one answer here</ul>
+                </button>
+                <button class="choiceD">
+                    <ul>D) one answer here</ul>
+                </button>
+                </ul>
+            </div>
+
+
+        </section>
+    </main>
     <!--ANSWERS-->
     <!--SCORE-->
     <script src="script.js"></script>

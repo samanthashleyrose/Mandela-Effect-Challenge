@@ -3,7 +3,7 @@
     --question-color: green;
     --question-font-size: 1.3rem;
     --answer-button-color: rgb(156, 199, 156);
-    --answer-button-font-size: 1.2rem;
+    --answer-button-font-size: 1.7rem;
     --all-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -12,6 +12,11 @@ body {
     margin-right: 15%;
     margin-top: 15%;
     margin-bottom: 15%;
+}
+
+h4 {
+    position: relative;
+    text-align: right;
 }
 
 header {
@@ -30,6 +35,73 @@ p {
     margin-right: 15%;
 }
 
-button {
+button:hover {
+    background-color: brown;
+}
+
+button:active {
+    transform: translateY(3px);
+    transition: 100ms;
+}
+
+#startBtn {
     font-size: var(--answer-button-font-size);
+    display: inline-block;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(15, 87%, 42%);
+    color: hsl(0, 0%, 100%);
+    padding: 3%;
+    margin-top: 1.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-end-screen-box {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: var(--main-text-color);
+    max-width: 800px;
+    padding: 10%;
+}
+
+.question-box {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: var(--main-text-color);
+    max-width: 800px;
+    padding: 10%;
+}
+
+.question-asked {
+    font-size: var(--question-font-size);
+
+}
+
+.possible-answers {
+    padding: 3%;
+    font-size: var(--answer-button-font-size);
+}
+
+.choiceA,
+.choiceB,
+.choiceC,
+.choiceD {
+    display: inline-block;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: hsl(15, 87%, 30%);
+    box-shadow: hsl(15, 65%, 64%) 0px 0px 0px 3px;
+    background-color: hsl(15, 87%, 42%);
+    color: hsl(0, 0%, 100%);
+    font-size: var(--answer-button-font-size);
+    padding-left: 0%;    
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 1.5%;
+    margin-left: -3%;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
 }
