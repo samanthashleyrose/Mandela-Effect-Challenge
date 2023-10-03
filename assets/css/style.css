@@ -12,16 +12,11 @@ body {
     margin-right: 15%;
     margin-top: 15%;
     margin-bottom: 15%;
-}
-
-h4 {
-    position: relative;
-    text-align: right;
+    font-family: var(--all-font-family);
 }
 
 header {
     text-align: center;
-    font-family: var(--all-font-family)
 }
 
 h1 {
@@ -30,13 +25,12 @@ h1 {
 
 p {
     font-size: var(--question-font-size);
-    font-family: var(--all-font-family);
     margin-left: 15%;
     margin-right: 15%;
 }
 
 button:hover {
-    background-color: brown;
+    background-color: hsla(15, 87%, 30%);;
 }
 
 button:active {
@@ -44,14 +38,17 @@ button:active {
     transition: 100ms;
 }
 
-#startBtn {
+.startBtn {
     font-size: var(--answer-button-font-size);
     display: inline-block;
-    border: none;
-    border-radius: 25px;
-    background-color: hsl(15, 87%, 42%);
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 8px;
+    border-color: hsl(15, 87%, 30%);
+    box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
+    background-color: hsl(15, 84%, 38%);
     color: hsl(0, 0%, 100%);
-    padding: 3%;
+    padding: 1%;
     margin-top: 1.5%;
     text-align: center;
     cursor: pointer;
@@ -61,15 +58,18 @@ button:active {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
-    max-width: 800px;
     padding: 10%;
+}
+
+h4 {
+    position: relative;
+    text-align: right;
 }
 
 .question-box {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
-    max-width: 800px;
     padding: 10%;
 }
 
@@ -88,13 +88,13 @@ button:active {
 .choiceC,
 .choiceD {
     display: inline-block;
-    border-radius: 25px;
-    border-width: 2px;
-    border-color: hsl(15, 87%, 30%);
-    box-shadow: hsl(15, 65%, 64%) 0px 0px 0px 3px;
-    background-color: hsl(15, 87%, 42%);
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
+    background-color: hsl(15, 84%, 38%);
     color: hsl(0, 0%, 100%);
     font-size: var(--answer-button-font-size);
+    font-family: var(--all-font-family);
     padding-left: 0%;    
     padding-right: 5%;
     padding-top: 5%;
