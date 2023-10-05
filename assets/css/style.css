@@ -12,11 +12,8 @@ body {
     margin-right: 15%;
     margin-top: 15%;
     margin-bottom: 15%;
+    padding-bottom: 60%;
     font-family: var(--all-font-family);
-}
-
-header {
-    text-align: center;
 }
 
 h1 {
@@ -54,11 +51,21 @@ button:active {
     cursor: pointer;
 }
 
-.start-end-screen-box {
+.start-box,
+.question-box {
+    position: absolute;
+}
+
+#start-box-style {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
+    margin-right: 15%;
+    text-align: center;
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 h4 {
@@ -66,11 +73,21 @@ h4 {
     text-align: right;
 }
 
-.question-box {
+#question-box-style {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
+    margin-right: 15%;
+    opacity: 0;
+    pointer-events: auto;
+    text-align: center;
+}
+
+.question-box.activeQuestions {
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .question-asked {
