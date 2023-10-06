@@ -3,13 +3,24 @@
 const startBox = document.querySelector('.startbox');
 const startBtn = document.querySelector('.startBtn');
 const questionBox1 = document.querySelector('.question-box1');
+const questionBox2 = document.querySelector('.question-box2');
+let choiceA = document.querySelector('.correct-answer')
+let choiceB = document.querySelector('.correct-answer')
+let choiceC = document.querySelector('.correct-answer')
+let choiceD = document.querySelector('.correct-answer')
 
-startBtn.addEventListener('click', onclick);
 
-// if Start Quiz button clicked
+
+// if Start Quiz button clicked then...
 startBtn.onclick = () => (
-    questionBox1.classList.add("activeQuestions") // then show the question box
+    questionBox1.classList.add("activeQuestions") // then show the question box 1
 );
+
+
+// if First Question is answered then...
+choiceA.onclick = () => (
+    questionBox2.classList.add("activeQuestions") // then show the question box 2
+)
 
 // connect to h3 timer in HTML
 var timerEL = document.getElementById('#timer');
