@@ -120,9 +120,7 @@ h4 {
 }
 
 #choiceA,
-#choiceB,
-#choiceC,
-#choiceD {
+#choiceB {
     display: inline-block;
     border-style: none;
     border-radius: 10px;
