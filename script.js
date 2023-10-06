@@ -4,6 +4,7 @@ const startBox = document.querySelector('.startbox');
 const startBtn = document.querySelector('.startBtn');
 const questionBox = document.querySelector('.question-box');
 
+startBtn.addEventListener('click', onclick);
 
 // if Start Quiz button clicked
 startBtn.onclick = () => (
@@ -42,3 +43,13 @@ window.onload = function () {
         display = document.querySelector('#timer');
         timerCountdown(ninetySeconds, display);
     };
+
+
+
+
+
+
+
+
+
+
