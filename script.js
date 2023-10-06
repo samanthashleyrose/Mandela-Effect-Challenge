@@ -2,13 +2,13 @@
 // all required elements
 const startBox = document.querySelector('.startbox');
 const startBtn = document.querySelector('.startBtn');
-const questionBox = document.querySelector('.question-box');
+const questionBox1 = document.querySelector('.question-box1');
 
 startBtn.addEventListener('click', onclick);
 
 // if Start Quiz button clicked
 startBtn.onclick = () => (
-    questionBox.classList.add("activeQuestions") // then show the question box
+    questionBox1.classList.add("activeQuestions") // then show the question box
 );
 
 // connect to h3 timer in HTML
