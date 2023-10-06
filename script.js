@@ -46,13 +46,11 @@ window.onload = function () {
 function question1 (){
     let choiceA = document.querySelector('.correct-answer')
     let choiceB = document.querySelector('.incorrect-answer')
-    let choiceC = document.querySelector('.incorrect-answer')
-    let choiceD = document.querySelector('.incorrect-answer')
 
     if (choiceA) {
         choiceA.onclick = () => (
         questionBox2.classList.add("activeQuestions"));
-    } else (choiceB, choiceC, choiceD)
+    } else (choiceB)
         choiceB.onclick = () => (
         questionBox2.classList.add("activeQuestions"));
 }
