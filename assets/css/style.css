@@ -1,9 +1,9 @@
 :root {
     --main-text-color: black;
     --question-color: green;
-    --question-font-size: 1.3rem;
+    --question-font-size: 3rem;
     --answer-button-color: rgb(156, 199, 156);
-    --answer-button-font-size: 1.7rem;
+    --answer-button-font-size: 2rem;
     --all-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -12,16 +12,16 @@ body {
     margin-right: 15%;
     margin-top: 15%;
     margin-bottom: 15%;
-    padding-bottom: 60%;
     font-family: var(--all-font-family);
 }
 
-h1 {
-    font-size: 2.6rem;
+h1,
+#question {
+    font-size: var(--question-font-size);
 }
 
 p {
-    font-size: var(--question-font-size);
+    font-size: var(--answer-button-font-size);
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -35,7 +35,7 @@ button:active {
     transition: 100ms;
 }
 
-.startBtn {
+.start-btn {
     font-size: var(--answer-button-font-size);
     display: inline-block;
     border-style: dotted;
@@ -52,70 +52,18 @@ button:active {
 }
 
 .start-box,
-.question-box1,
-.question-box2 {
-    position: absolute;
-}
-
-#start-box-style {
+#question-box {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
-    margin-right: 20%;
-    margin-left: 6%;
     text-align: center;
-    z-index: 1;
     opacity: 1;
     pointer-events: auto;
 }
 
-h4 {
-    position: relative;
+#timer {
     text-align: right;
-}
-
-.question-box1 {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: var(--main-text-color);
-    padding: 10%;
-    margin-left: 5%;
-    opacity: 0;
-    pointer-events: auto;
-    text-align: center;
-}
-
-.question-box1.activeQuestions {
-    z-index: 2;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.question-box2 {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-    color: var(--main-text-color);
-    padding: 10%;
-    margin-left: 5%;
-    opacity: 0;
-    pointer-events: auto;
-    text-align: center;
-}
-
-.question-box2.activeQuestions {
-    z-index: 2;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.question-asked {
-    font-size: var(--question-font-size);
-
-}
-
-.possible-answers {
-    padding: 3%;
     font-size: var(--answer-button-font-size);
 }
 
@@ -129,12 +77,8 @@ h4 {
     color: hsl(0, 0%, 100%);
     font-size: var(--answer-button-font-size);
     font-family: var(--all-font-family);
-    padding-left: 0%;    
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 3.5%;
     margin-top: 1.5%;
-    margin-left: -3%;
     width: 100%;
     text-align: left;
     cursor: pointer;
