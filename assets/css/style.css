@@ -73,7 +73,7 @@ h4 {
     text-align: right;
 }
 
-#question-box-style {
+.question-box {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
