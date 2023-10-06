@@ -62,7 +62,8 @@ button:active {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
-    margin-right: 15%;
+    margin-right: 20%;
+    margin-left: 6%;
     text-align: center;
     z-index: 1;
     opacity: 1;
@@ -79,7 +80,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
-    margin-right: 15%;
+    margin-left: 5%;
     opacity: 0;
     pointer-events: auto;
     text-align: center;
@@ -96,7 +97,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
     padding: 10%;
-    margin-right: 15%;
+    margin-left: 5%;
     opacity: 0;
     pointer-events: auto;
     text-align: center;

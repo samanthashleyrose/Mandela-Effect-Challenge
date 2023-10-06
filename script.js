@@ -4,30 +4,17 @@ const startBox = document.querySelector('.startbox');
 const startBtn = document.querySelector('.startBtn');
 const questionBox1 = document.querySelector('.question-box1');
 const questionBox2 = document.querySelector('.question-box2');
-let choiceA = document.querySelector('.correct-answer')
-let choiceB = document.querySelector('.correct-answer')
-let choiceC = document.querySelector('.correct-answer')
-let choiceD = document.querySelector('.correct-answer')
 
-
-
-// if Start Quiz button clicked then...
+// if Start Quiz button clicked
 startBtn.onclick = () => (
-    questionBox1.classList.add("activeQuestions") // then show the question box 1
+    questionBox1.classList.add("activeQuestions") // then show the question box
 );
-
-
-// if First Question is answered then...
-choiceA.onclick = () => (
-    questionBox2.classList.add("activeQuestions") // then show the question box 2
-)
 
 // connect to h3 timer in HTML
 var timerEL = document.getElementById('#timer');
 
-
 // timer that counts down from 60 (seconds)
-function timerCountdown (duration, display) {
+function timerCountdown (duration) {
 
     var timeLeft = duration, minutes, seconds;
     setInterval(function() {
@@ -55,12 +42,20 @@ window.onload = function () {
         timerCountdown(ninetySeconds, display);
     };
 
+// if First Question is answered then show the question box 2
+function question1 (){
+    let choiceA = document.querySelector('.correct-answer')
+    let choiceB = document.querySelector('.incorrect-answer')
+    let choiceC = document.querySelector('.incorrect-answer')
+    let choiceD = document.querySelector('.incorrect-answer')
 
-
-
-
-
-
-
+    if (choiceA) {
+        choiceA.onclick = () => (
+        questionBox2.classList.add("activeQuestions"));
+    } else (choiceB, choiceC, choiceD)
+        choiceB.onclick = () => (
+        questionBox2.classList.add("activeQuestions"));
+}
+question1()
 
 
