@@ -1,17 +1,53 @@
-
 // all required elements
-const startBox = document.querySelector('.startbox');
-const startBtn = document.querySelector('.startBtn');
-const questionBox1 = document.querySelector('.question-box1');
-const questionBox2 = document.querySelector('.question-box2');
+const startBox = document.querySelector('.start-box')
+const startBtn = document.querySelector('.start-btn')
+
+const questionBox = document.getElementById('question-box')
+const possibleAnswers = document.querySelectorAll('possible-answers button')
+
+const questionEl = document.getElementById('question')
+const imageEl = document.getElementById('image')
+const choiceABtn = document.getElementById('choiceA')
+const choiceBBtn = document.getElementById('choiceB')
 
 // if Start Quiz button clicked
 startBtn.onclick = () => (
-    questionBox1.classList.add("activeQuestions") // then show the question box
+    startBox.classList.remove("activeStart")
 );
 
+// defines the values the question box will loop through 
+let questions = [
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/looney-toons.png",
+        choices: ["Looney Toons", "Looney Tunes"],
+        answer: "Looney Tunes"
+    },
+    {
+        question: "Which logo is correct?",
+        image: src="./assets/images/Jiffy",
+        choiceA: "JIFFY",
+        choiceB: "JIF",
+        answer: "JIF"
+    }
+]
+
+// Set the question text
+questionEl.textContent = questions[0].question;
+
+// Set the image, alt text, and width for the question
+imageEl.src = questions[0].image;
+imageEl.alt = "Looney Toons/Tunes Comparison"
+imageEl.width = 800;
+
+// Set answer choices on buttons
+
+choiceABtn.textContent = questions[0].choices[0];
+choiceBBtn.textContent = questions[0].choices[1];
+
+
 // connect to h3 timer in HTML
-var timerEL = document.getElementById('#timer');
+var timerEL = document.getElementById('timer');
 
 // timer that counts down from 60 (seconds)
 function timerCountdown (duration) {
@@ -41,19 +77,3 @@ window.onload = function () {
         display = document.querySelector('#timer');
         timerCountdown(ninetySeconds, display);
     };
-
-// if First Question is answered then show the question box 2
-function question1 (){
-    let choiceA = document.querySelector('.correct-answer')
-    let choiceB = document.querySelector('.incorrect-answer')
-
-    if (choiceA) {
-        choiceA.onclick = () => (
-        questionBox2.classList.add("activeQuestions"));
-    } else (choiceB)
-        choiceB.onclick = () => (
-        questionBox2.classList.add("activeQuestions"));
-}
-question1()
-
-

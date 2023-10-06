@@ -3,63 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Quiz</title>
+    <title>Mandela Effect Quiz</title>
     <link rel="resetsheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
     <!--HEADER-->
-    <div class="start-box" id="start-box-style">
+    <div class="start-box">
         <h1>Mandela Effect Challenge</h1>
         <p>How accurate is your memory? Try to answer the following pop-culture related questions within the time limit. Keep in mind that incorrect answers will penalize your time by ten seconds!</p>
-        <button class="startBtn" id="startBtn">Start Quiz</button>
+        <button class="start-btn">Start Quiz</button>
     </div>
     <!--QUESTIONS-->
-    <div class="question-box1">
-            <div>
-                <h4 id="#timer"></h4>
-            </div>
-            <div class="question-asked">
-                <h2>Which logo is correct?</h2>
-                <img src="./assets/images/looney-toons.png" alt="">
-            </div>
-        <div class="possible-answers">
-            <ul>
-            <button class="incorrect-answer" id="choiceA">
-                <ul>Looney Toons </ul>
-            </button>
-            <button class="correct-answer" id="choiceB">
-                <ul>Looney Tunes - CORRECT </ul>
-            </button>
-            <!-- <button class="incorrect-answer" id="choiceC">
-                <ul>C) one answer here</ul>
-            </button>
-            <button class="incorrect-answer" id="choiceD">
-                <ul>D) one answer here</ul>
-            </button> -->
-            </ul>
+    <div id="question-box">
+        <h4 id="timer"></h4>
+        <h1 id="question">Is this a question?</h1>
+        <img id="image" src="./assets/images/looney-toons.png" alt="image placeholder">
+        <div id="possible-answers">
+            <button id="choiceA">Answer A</button>
+            <button id="choiceB">Answer B</button>
         </div>
     </div>
-    <div class="question-box2">
-        <div>
-            <h4 id="#timer"></h4>
-        </div>
-        <div class="question-asked">
-            <h2>Which logo is correct?</h2>
-            <img src="./assets/images/jiffy.png" alt="">
-        </div>
-    <div class="possible-answers">
-        <ul>
-        <button class="incorrect-answer" id="choiceA">
-            <ul>JIFFY</ul>
-        </button>
-        <button class="correct-answer" id="choiceB">
-            <ul>JIF - CORRECT </ul>
-        </button>
-        </ul>
-    </div>
-</div>
+
     <!--ANSWERS-->
     <!--SCORE-->
     <script src="script.js"></script>
