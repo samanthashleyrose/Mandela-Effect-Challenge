@@ -52,7 +52,8 @@ button:active {
 }
 
 .start-box,
-.question-box1 {
+.question-box1,
+.question-box2 {
     position: absolute;
 }
 
@@ -90,6 +91,23 @@ h4 {
     pointer-events: auto;
 }
 
+.question-box2 {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: var(--main-text-color);
+    padding: 10%;
+    margin-right: 15%;
+    opacity: 0;
+    pointer-events: auto;
+    text-align: center;
+}
+
+.question-box2.activeQuestions {
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .question-asked {
     font-size: var(--question-font-size);
 
@@ -100,10 +118,10 @@ h4 {
     font-size: var(--answer-button-font-size);
 }
 
-.choiceA,
-.choiceB,
-.choiceC,
-.choiceD {
+#choiceA,
+#choiceB,
+#choiceC,
+#choiceD {
     display: inline-block;
     border-style: none;
     border-radius: 10px;
