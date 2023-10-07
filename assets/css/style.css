@@ -67,6 +67,10 @@ button:active {
     font-size: var(--answer-button-font-size);
 }
 
+#image {
+    max-width: 100%;
+}
+
 #choiceA,
 #choiceB {
     display: inline-block;
