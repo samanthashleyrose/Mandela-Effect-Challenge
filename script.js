@@ -38,7 +38,15 @@ const questions = [
         choices: ["JIFFY","JIF"],
         answer: "JIF",
         wrongAnswer: "JIFFY"
-    }
+    },
+    {
+        question: "Does Curious George have a tail?",
+        image: "./assets/images/curious-george.png",
+        imageAlt: "Curious George Comparison",
+        choices: ["He does not have a tail","He has a tail"],
+        answer: "He does not have a tail",
+        wrongAnswer: "He has a tail"
+    },
 ]
 
 // Define the event listener for answer buttons outside of any functions
