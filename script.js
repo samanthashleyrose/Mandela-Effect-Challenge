@@ -1,19 +1,25 @@
 // all required elements
-const startBox = document.querySelector('.start-box')
-const startBtn = document.querySelector('.start-btn')
-
-const questionBox = document.getElementById('question-box')
 const possibleAnswers = document.querySelectorAll('possible-answers button')
+
 
 const questionEl = document.getElementById('question')
 const imageEl = document.getElementById('image')
 const choiceABtn = document.getElementById('choiceA')
 const choiceBBtn = document.getElementById('choiceB')
 
-// if Start Quiz button clicked
-startBtn.onclick = () => (
-    startBox.classList.remove("activeStart")
-);
+// if Start Quiz button clicked then it will display the question box on top of it
+document.getElementById('start-btn').addEventListener('click', function (){
+    var startBox = document.getElementById('start-box')
+    var questionBox = document.getElementById('question-box')
+
+    if (startBox.style.display === 'none') {
+        startBox.style.display = 'block';
+        questionBox.style.display = 'none';
+    } else {
+        startBox.style.display = 'none';
+        questionBox.style.display = 'block';
+    }
+});
 
 // defines the values the question box will loop through 
 let questions = [

@@ -35,7 +35,7 @@ button:active {
     transition: 100ms;
 }
 
-.start-btn {
+#start-btn {
     font-size: var(--answer-button-font-size);
     display: inline-block;
     border-style: dotted;
@@ -51,16 +51,32 @@ button:active {
     cursor: pointer;
 }
 
-.start-box,
-#question-box {
+.box-style {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
     color: var(--main-text-color);
-    padding: 10%;
+    padding: 5%;
     text-align: center;
-    opacity: 1;
-    pointer-events: auto;
 }
+
+#start-box {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#question-box {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 #timer {
     text-align: right;
