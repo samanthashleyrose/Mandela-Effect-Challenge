@@ -47,7 +47,6 @@ imageEl.alt = "Looney Toons/Tunes Comparison"
 imageEl.width = 800;
 
 // Set answer choices on buttons
-
 choiceABtn.textContent = questions[0].choices[0];
 choiceBBtn.textContent = questions[0].choices[1];
 
