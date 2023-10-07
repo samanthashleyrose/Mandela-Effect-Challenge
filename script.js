@@ -1,7 +1,6 @@
 // all required elements
-const possibleAnswers = document.querySelectorAll('possible-answers button')
 
-
+let currentQuestionIndex = 0;
 const questionEl = document.getElementById('question')
 const imageEl = document.getElementById('image')
 const choiceABtn = document.getElementById('choiceA')
@@ -12,7 +11,7 @@ document.getElementById('start-btn').addEventListener('click', function (){
     var startBox = document.getElementById('start-box')
     var questionBox = document.getElementById('question-box')
 
-    if (startBox.style.display === 'none') {
+    if (questionBox.style.display === 'none') {
         startBox.style.display = 'block';
         questionBox.style.display = 'none';
     } else {
@@ -22,33 +21,63 @@ document.getElementById('start-btn').addEventListener('click', function (){
 });
 
 // defines the values the question box will loop through 
-let questions = [
+const questions = [
     {
         question: "Which logo is correct?",
         image: "./assets/images/looney-toons.png",
+        imageAlt: "Looney Toons/Tunes Comparison",
         choices: ["Looney Toons", "Looney Tunes"],
-        answer: "Looney Tunes"
+        answer: "Looney Tunes",
+        wrongAnswer: "Looney Toons"
+        
     },
     {
         question: "Which logo is correct?",
-        image: src="./assets/images/Jiffy",
-        choiceA: "JIFFY",
-        choiceB: "JIF",
-        answer: "JIF"
+        image: "./assets/images/jiffy.png",
+        imageAlt: "JIF Comparison",
+        choices: ["JIFFY","JIF"],
+        answer: "JIF",
+        wrongAnswer: "JIFFY"
     }
 ]
 
-// Set the question text
-questionEl.textContent = questions[0].question;
+// Define the event listener for answer buttons outside of any functions
+const possibleAnswers = document.querySelectorAll('#possible-answers button');
+possibleAnswers.forEach(button => {
+    button.addEventListener('click', handleAnswerClick);
+});
 
-// Set the image, alt text, and width for the question
-imageEl.src = questions[0].image;
-imageEl.alt = "Looney Toons/Tunes Comparison"
-imageEl.width = 800;
 
-// Set answer choices on buttons
-choiceABtn.textContent = questions[0].choices[0];
-choiceBBtn.textContent = questions[0].choices[1];
+// Create a function to handle answer button clicks and advance to the next question
+
+function handleAnswerClick(click) {
+    const selectedAnswer = click.target.textContent;
+    const currentQuestion = questions[currentQuestionIndex];
+
+    if (selectedAnswer === currentQuestion.answer || selectedAnswer === currentQuestion.wrongAnswer) {
+        // User selected the correct answer
+        currentQuestionIndex++; // Move to the next question
+
+        if (currentQuestionIndex < questions.length) {
+            // If there are more questions, display the next question
+            displayCurrentQuestion();
+        } else {
+            // If there are no more questions
+            console.log("Quiz completed!");
+        }
+}}
+
+
+// Create a function to display the current question
+function displayCurrentQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+
+    questionEl.textContent = currentQuestion.question;
+    imageEl.src = currentQuestion.image;
+    choiceABtn.textContent = currentQuestion.choices[0];
+    choiceBBtn.textContent = currentQuestion.choices[1];
+}
+displayCurrentQuestion();
 
 
 // connect to h3 timer in HTML
