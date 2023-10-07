@@ -47,6 +47,70 @@ const questions = [
         answer: "He does not have a tail",
         wrongAnswer: "He has a tail"
     },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/skechers.png",
+        imageAlt: "Skechers Comparison",
+        choices: ["Sketchers","Skechers"],
+        answer: "Skechers",
+        wrongAnswer: "Sketchers"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/flintstones.png",
+        imageAlt: "Flintstones Comparison",
+        choices: ["Flinstones","Flintstones"],
+        answer: "Flintstones",
+        wrongAnswer: "Flinstones"
+    },
+    {
+        question: "Does the Monopoly Man have a Monocle?",
+        image: "./assets/images/monopoly-man.png",
+        imageAlt: "Monopoly Man Comparison",
+        choices: ["He does not have a monocle","He has a monocle"],
+        answer: "He does not have a monocle",
+        wrongAnswer: "He has a monocle"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/berenstain-bears.png",
+        imageAlt: "Berenstain Bears Comparison",
+        choices: ["Berenstein","Berenstain"],
+        answer: "Berenstain",
+        wrongAnswer: "Berenstein"
+    },
+    {
+        question: "Does C-3PO have a silver leg?",
+        image: "./assets/images/c3po.png",
+        imageAlt: "C3PO Comparison",
+        choices: ["He has a silver leg","He does not have a silver leg"],
+        answer: "He has a silver leg",
+        wrongAnswer: "He does not have a silver leg"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/kitkat.png",
+        imageAlt: "KitKat Comparison",
+        choices: ["Kit-Kat","KitKat"],
+        answer: "KitKat",
+        wrongAnswer: "Kit-Kat"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/sex-and-the-city.png",
+        imageAlt: "Sex and the City Comparison",
+        choices: ["Sex in the City","Sex and the City"],
+        answer: "Sex and the City",
+        wrongAnswer: "Sex in the City"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/fotl.png",
+        imageAlt: "Fruit of the Loom Comparison",
+        choices: ["It has a Cornucopia","It does not have a Cornucopia"],
+        answer: "It does not have a Cornucopia",
+        wrongAnswer: "It has a Cornucopia"
+    },
 ]
 
 // Define the event listener for answer buttons outside of any functions
