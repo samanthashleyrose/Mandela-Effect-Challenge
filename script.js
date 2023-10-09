@@ -5,12 +5,13 @@ const imageEl = document.getElementById('image')
 const choiceABtn = document.getElementById('choiceA')
 const choiceBBtn = document.getElementById('choiceB')
 
+let startBox = document.getElementById('start-box')
+let questionBox = document.getElementById('question-box')
+let scoreboard = document.getElementById('results-box')
+
 // If Start Quiz button is clicked then it will display the question box on top of it
 document.getElementById('start-btn').addEventListener('click', function (){
     console.log('Start Button Clicked!');
-
-    var startBox = document.getElementById('start-box')
-    var questionBox = document.getElementById('question-box')
 
     if (questionBox.style.display === 'none') {
         startBox.style.display = 'block';
@@ -135,6 +136,9 @@ function handleAnswerClick(click) {
             displayCurrentQuestion();
         } else {
             // If there are no more questions
+            startBox.style.display = 'none';
+            questionBox.style.display = 'none';
+            scoreboard.style.display = 'block';
             console.log("Quiz completed!");
         }
 }}
