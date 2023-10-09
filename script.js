@@ -19,6 +19,7 @@ document.getElementById('start-btn').addEventListener('click', function (){
     } else {
         startBox.style.display = 'none';
         questionBox.style.display = 'block';
+        console.log("Timer countdown has begun")
     }
 });
 
@@ -178,12 +179,12 @@ function timerCountdown (duration) {
         if (--timeLeft < 0) {
             timerEL.textContent = duration;
         }
-        }, 1000);
-    };
+    }, 1000);
+};
 
 // Displays timer on window = 90 second countdown 
 window.onload = function () {
     var ninetySeconds = 60 * 1.5,
         display = document.querySelector('#timer');
         timerCountdown(ninetySeconds, display);
-    };
+};
