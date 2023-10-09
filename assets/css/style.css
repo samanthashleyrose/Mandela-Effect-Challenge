@@ -87,7 +87,7 @@ button:active {
 
 ul {
     font-size: var(--answer-button-font-size);
-    margin-right: 15%;
+    text-align: left;
 }
 
 #timer {
