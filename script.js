@@ -1,13 +1,14 @@
-// all required elements
-
+// All required elements
 let currentQuestionIndex = 0;
 const questionEl = document.getElementById('question')
 const imageEl = document.getElementById('image')
 const choiceABtn = document.getElementById('choiceA')
 const choiceBBtn = document.getElementById('choiceB')
 
-// if Start Quiz button clicked then it will display the question box on top of it
+// If Start Quiz button is clicked then it will display the question box on top of it
 document.getElementById('start-btn').addEventListener('click', function (){
+    console.log('Start Button Clicked!');
+
     var startBox = document.getElementById('start-box')
     var questionBox = document.getElementById('question-box')
 
@@ -20,7 +21,7 @@ document.getElementById('start-btn').addEventListener('click', function (){
     }
 });
 
-// defines the values the question box will loop through 
+// Defines the values the question box will loop through 
 const questions = [
     {
         question: "Which logo is correct?",
@@ -110,26 +111,25 @@ const questions = [
         choices: ["It has a Cornucopia","It does not have a Cornucopia"],
         answer: "It does not have a Cornucopia",
         wrongAnswer: "It has a Cornucopia"
-    },
+    }
 ]
 
-// Define the event listener for answer buttons outside of any functions
+// Defines the event listener for answer buttons
 const possibleAnswers = document.querySelectorAll('#possible-answers button');
 possibleAnswers.forEach(button => {
     button.addEventListener('click', handleAnswerClick);
 });
 
 
-// Create a function to handle answer button clicks and advance to the next question
-
+// Function that will handle the answer button clicks and advance to the next question
 function handleAnswerClick(click) {
     const selectedAnswer = click.target.textContent;
     const currentQuestion = questions[currentQuestionIndex];
 
     if (selectedAnswer === currentQuestion.answer || selectedAnswer === currentQuestion.wrongAnswer) {
-        // User selected the correct answer
+        // User selected the correct answer or the incorrect answer
         currentQuestionIndex++; // Move to the next question
-
+        console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
         if (currentQuestionIndex < questions.length) {
             // If there are more questions, display the next question
             displayCurrentQuestion();
@@ -140,7 +140,7 @@ function handleAnswerClick(click) {
 }}
 
 
-// Create a function to display the current question
+// Function that will display the current question
 function displayCurrentQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
 
@@ -152,10 +152,10 @@ function displayCurrentQuestion() {
 displayCurrentQuestion();
 
 
-// connect to h3 timer in HTML
+// Connects to h3 timer in HTML
 var timerEL = document.getElementById('timer');
 
-// timer that counts down from 60 (seconds)
+// Timer that counts down from 90 (seconds)
 function timerCountdown (duration) {
 
     var timeLeft = duration, minutes, seconds;
@@ -177,7 +177,7 @@ function timerCountdown (duration) {
         }, 1000);
     };
 
-// display timer on window = 90 second countdown 
+// Displays timer on window = 90 second countdown 
 window.onload = function () {
     var ninetySeconds = 60 * 1.5,
         display = document.querySelector('#timer');
