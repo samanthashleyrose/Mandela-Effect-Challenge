@@ -1,9 +1,9 @@
 :root {
     --main-text-color: black;
     --question-color: green;
-    --question-font-size: 3rem;
+    --question-font-size: 2.2rem;
     --answer-button-color: rgb(156, 199, 156);
-    --answer-button-font-size: 2rem;
+    --answer-button-font-size: 1.5rem;
     --all-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -41,11 +41,11 @@ button:active {
     border-style: dotted;
     border-radius: 10px;
     border-width: 8px;
-    border-color: hsl(15, 87%, 30%);
+    border-color: hsla(353, 48%, 37%, 0.961);
     box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
-    background-color: hsl(15, 84%, 38%);
+    background-color: hsl(352, 34%, 47%);
     color: hsl(0, 0%, 100%);
-    padding: 1%;
+    padding: 1.2%;
     margin-top: 1.5%;
     text-align: center;
     cursor: pointer;
@@ -76,10 +76,9 @@ button:active {
     transform: translate(-50%, -50%);
 }
 
-
 #timer {
     text-align: right;
-    font-size: var(--answer-button-font-size);
+    font-size: 1rem;
 }
 
 #image {
@@ -92,7 +91,7 @@ button:active {
     border-style: none;
     border-radius: 10px;
     box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
-    background-color: hsl(15, 84%, 38%);
+    background-color: hsla(352, 48%, 43%, 0.864);
     color: hsl(0, 0%, 100%);
     font-size: var(--answer-button-font-size);
     font-family: var(--all-font-family);
