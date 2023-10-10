@@ -48,7 +48,6 @@ button:active {
     padding: 1.2%;
     margin-top: 1.5%;
     text-align: center;
-    cursor: pointer;
 }
 
 .box-style {
@@ -78,23 +77,50 @@ button:active {
 
 #results-box {
     z-index: 3;
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-ul {
-    font-size: var(--answer-button-font-size);
+input {
+    width: 85%;
+}
+
+label {
+    text-align: left; 
+}
+
+#results-form {
+    font-size: 1.5rem;
     text-align: left;
+}
+
+#results-text {
+    font-size: 1rem;
+    padding: 2%;
+}
+
+#results-submit {
+    font-size: var(--answer-button-font-size);
+    display: inline-block;
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 7px;
+    border-color: hsla(353, 48%, 37%, 0.961);
+    box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
+    background-color: hsl(352, 34%, 47%);
+    color: hsl(0, 0%, 100%);
+    padding: 1%;
+    margin-top: 1.5%;
+    text-align: center;
 }
 
 #timer {
     text-align: right;
     font-size: 1rem;
 }
-
 #image {
     max-width: 80%;
 }
@@ -113,5 +139,4 @@ ul {
     margin-top: 1.5%;
     width: 100%;
     text-align: left;
-    cursor: pointer;
 }
