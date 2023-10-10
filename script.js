@@ -9,9 +9,15 @@ let startBox = document.getElementById('start-box')
 let questionBox = document.getElementById('question-box')
 let scoreboard = document.getElementById('results-box')
 
+var totalTime = 60 * 1.5;
+var timeLeft = totalTime
+
 // If Start Quiz button is clicked then it will display the question box on top of it
 document.getElementById('start-btn').addEventListener('click', function (){
     console.log('Start Button Clicked!');
+
+    display = document.querySelector('#timer');
+    timerCountdown();
 
     if (questionBox.style.display === 'none') {
         startBox.style.display = 'block';
@@ -30,8 +36,7 @@ const questions = [
         image: "./assets/images/looney-toons.png",
         imageAlt: "Looney Toons/Tunes Comparison",
         choices: ["Looney Toons", "Looney Tunes"],
-        answer: "Looney Tunes",
-        wrongAnswer: "Looney Toons"
+        answer: "Looney Tunes"
         
     },
     {
@@ -39,80 +44,70 @@ const questions = [
         image: "./assets/images/jiffy.png",
         imageAlt: "JIF Comparison",
         choices: ["JIFFY","JIF"],
-        answer: "JIF",
-        wrongAnswer: "JIFFY"
+        answer: "JIF"
     },
     {
         question: "Does Curious George have a tail?",
         image: "./assets/images/curious-george.png",
         imageAlt: "Curious George Comparison",
         choices: ["He does not have a tail","He has a tail"],
-        answer: "He does not have a tail",
-        wrongAnswer: "He has a tail"
+        answer: "He does not have a tail"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/skechers.png",
         imageAlt: "Skechers Comparison",
         choices: ["Sketchers","Skechers"],
-        answer: "Skechers",
-        wrongAnswer: "Sketchers"
+        answer: "Skechers"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/flintstones.png",
         imageAlt: "Flintstones Comparison",
         choices: ["Flinstones","Flintstones"],
-        answer: "Flintstones",
-        wrongAnswer: "Flinstones"
+        answer: "Flintstones"
     },
     {
         question: "Does the Monopoly Man have a Monocle?",
         image: "./assets/images/monopoly-man.png",
         imageAlt: "Monopoly Man Comparison",
         choices: ["He does not have a monocle","He has a monocle"],
-        answer: "He does not have a monocle",
-        wrongAnswer: "He has a monocle"
+        answer: "He does not have a monocle"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/berenstain-bears.png",
         imageAlt: "Berenstain Bears Comparison",
         choices: ["Berenstein","Berenstain"],
-        answer: "Berenstain",
-        wrongAnswer: "Berenstein"
+        answer: "Berenstain"
     },
     {
         question: "Does C-3PO have a silver leg?",
         image: "./assets/images/c3po.png",
         imageAlt: "C3PO Comparison",
         choices: ["He has a silver leg","He does not have a silver leg"],
-        answer: "He has a silver leg",
-        wrongAnswer: "He does not have a silver leg"
+        answer: "He has a silver leg"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/kitkat.png",
         imageAlt: "KitKat Comparison",
         choices: ["Kit-Kat","KitKat"],
-        answer: "KitKat",
-        wrongAnswer: "Kit-Kat"
+        answer: "KitKat"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/sex-and-the-city.png",
         imageAlt: "Sex and the City Comparison",
         choices: ["Sex in the City","Sex and the City"],
-        answer: "Sex and the City",
-        wrongAnswer: "Sex in the City"
+        answer: "Sex and the City"
     },
     {
         question: "Which logo is correct?",
         image: "./assets/images/fotl.png",
         imageAlt: "Fruit of the Loom Comparison",
         choices: ["It has a Cornucopia","It does not have a Cornucopia"],
-        answer: "It does not have a Cornucopia",
-        wrongAnswer: "It has a Cornucopia"
+        answer: "It does not have a Cornucopia"
     }
 ]
 
@@ -128,10 +123,13 @@ function handleAnswerClick(click) {
     const selectedAnswer = click.target.textContent;
     const currentQuestion = questions[currentQuestionIndex];
 
-    if (selectedAnswer === currentQuestion.answer || selectedAnswer === currentQuestion.wrongAnswer) {
-        // User selected the correct answer or the incorrect answer
+        // condition checking if answer is wrong, then reduce the time by 15 secs
+        if(selectedAnswer !== currentQuestion.answer){
+            timeLeft -= 10;
+        }
         currentQuestionIndex++; // Move to the next question
         console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
+
         if (currentQuestionIndex < questions.length) {
             // If there are more questions, display the next question
             displayCurrentQuestion();
@@ -142,7 +140,7 @@ function handleAnswerClick(click) {
             scoreboard.style.display = 'block';
             console.log("Quiz completed!");
         }
-}}
+}
 
 
 // Function that will display the current question
@@ -161,9 +159,10 @@ displayCurrentQuestion();
 var timerEL = document.getElementById('timer');
 
 // Timer that counts down from 90 (seconds)
-function timerCountdown (duration) {
+function timerCountdown () {
 
-    var timeLeft = duration, minutes, seconds;
+    var duration, minutes, seconds;
+
     setInterval(function() {
         // Minutes are number of current total seconds divided by 60 (seconds in a minute).
         minutes = parseInt(timeLeft / 60, 10);
@@ -177,14 +176,7 @@ function timerCountdown (duration) {
         timerEL.textContent = minutes + ":" + seconds;
         
         if (--timeLeft < 0) {
-            timerEL.textContent = duration;
+            timerEL.textContent = duration; // Duration keeps timer from going negative
         }
     }, 1000);
-};
-
-// Displays timer on window = 90 second countdown 
-window.onload = function () {
-    var ninetySeconds = 60 * 1.5,
-        display = document.querySelector('#timer');
-        timerCountdown(ninetySeconds, display);
 };
