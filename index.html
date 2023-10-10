@@ -29,9 +29,18 @@
     <div class="box-style" id="results-box">
     <h1>Your Score</h1>
     <p>
-        <ul>High:</ul>
-        <ul>Low:</ul>
+        <h2>Save your results</h2>
     </p>
+    <form id="results-form" method="post">
+        <label for="results-text">Initials</label>
+        <input type="text" placeholder="SR" name="results-text" id="results-text">
+        <br>
+        <label for="results-text">Date</label>
+        <input type="text" placeholder="10-10-2023" name="results-text" id="results-text">
+
+    </form>
+    <p>Players: <span id="players-count">0</span></p>
+    <ul id="players-list"></ul>
     </div>
     <script src="script.js"></script>
 </body>
