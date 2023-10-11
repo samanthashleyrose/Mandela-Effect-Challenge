@@ -154,7 +154,6 @@ function displayCurrentQuestion() {
 }
 displayCurrentQuestion();
 
-
 // Connects to h3 timer in HTML
 var timerEL = document.getElementById('timer');
 
@@ -180,3 +179,8 @@ function timerCountdown () {
         }
     }, 1000);
 };
+
+
+document.getElementById('results-submit').addEventListener('click', function(){
+    console.log('Submit Results Button Clicked!');
+})
