@@ -85,7 +85,7 @@ button:active {
 }
 
 input {
-    width: 95%;
+    width: 91%;
 }
 
 label {
@@ -116,7 +116,7 @@ label {
     box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
     background-color: hsl(352, 34%, 47%);
     color: hsl(0, 0%, 100%);
-    padding: 1%;
+    padding: 1.5%;
     margin-top: 5%;
 }
 
@@ -126,6 +126,21 @@ label {
 
 #players-list {
     font-size: 1.3rem;
+}
+
+#play-again-btn {
+    font-size: var(--answer-button-font-size);
+    display: inline-block;
+    border-style: dotted;
+    border-radius: 10px;
+    border-width: 7px;
+    border-color: hsla(353, 48%, 37%, 0.961);
+    box-shadow: hsla(15, 87%, 30%, 0.292) 0px 0px 0px 1.5px;
+    background-color: hsl(352, 34%, 47%);
+    color: hsl(0, 0%, 100%);
+    padding: 1.5%;
+    margin-top: 1.5%;
+    text-align: center;
 }
 
 #timer {
