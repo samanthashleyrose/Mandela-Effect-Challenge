@@ -1,21 +1,21 @@
-# module04-challenge - Mandela Effect Quiz
+# module04-challenge - Mandela Effect Challenge/Quiz
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another. How well do you think your memory is? -- Take the Mandela Effect Challenge (insert deployed link here) and put your memory to the test! 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+The quiz consists of 12 pop-culture related questions that you will need to answer within 90 seconds. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
+
+Using HTML, CSS, and JavaScript I was able to create an interactive site to host the game. By properly writing and organizing the code 
+
+During this creating of this project, I learned the value of:
+- The Document Object
+    - The Document Object in JavaScript has a multitude of properties and methods that can access and manipulate your HTML to provide creative functionality. This site uses the .getElementById method and .addEventListener method many times to use the HTML obtain goals like button pressing and displaying different boxes.
+- Local Storage
+    - What fun is a game if you can't keep track of your score and other's scores? Local storage allows the site to save the current players information (name, score, date) so they can play the game again and compare their progress. In addition, the player could then compare their scores with any friends who play as well. 
 
 
-
-How accurate is your memory? 
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -24,17 +24,20 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation is necessary.
 
 ## Usage
 
+Use images provided to decided which answer is correct 
+Timer - 10 second penalization per wrong answer
+
+Local Storage will dipslay results on results box and also in applications under dev tools
+
+Play again button will reload the page to start over
+
+Video from start button to results screen displayed then play agian is pressed - LInk to features on how to save your score 
+
 Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
@@ -56,10 +59,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 <li><link><a href="https://www.youtube.com/watch?v=WUBhpSRS_fk">Create a Quiz App with Timer using HTML CSS & JavaScript | CodingNepal - YouTube</a></link></li>
 <li><link><a href="https://www.goodhousekeeping.com/life/entertainment/g28438966/mandela-effect-examples/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_d_bm_prog_org_us_g28438966&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzEm3ILlTVFh9cMIXKPhYzc6PSgRWb6MrEcwgHy8IygZhuaA6ZZ4rTxoCr_cQAvD_BwE">53 Mandela Effect Examples That Will Make Question Everything - Good Housekeeping</a></link></li>
 
+## Features
+
+Video on Saving your score!
+
 ## License
 
 Please refer to the MIT LICENSE in the repo.
-
-## Features
-
-If your project has a lot of features, list them here.
