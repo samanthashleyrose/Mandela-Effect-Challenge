@@ -27,21 +27,18 @@
     </div>
     <!--SCORE-->
     <div class="box-style" id="results-box">
-    <h1>Your Score</h1>
+    <h1>Your Score: <span id="score">0</span></h1>
     <p>
         <h3>↓ Save your results ↓</h3>
     </p>
     <form id="results-form" method="post">
-        <ul>
-        <label for="results-text">Initials</label>
-        <input type="text" placeholder="Enter your initials" name="results-text" id="results-text">
-        <br>
-        <label for="results-text">Date</label>
-        <input type="text" placeholder="Enter today's date" name="results-text" id="results-text">
-        </ul>
+        <label for="initials"></label>
+        <input type="text" placeholder="Enter your initials or a nickname" name="results-text" id="initials" required>
+        <div id="results-submit-align">
+        <button id="results-submit">SUBMIT</button>
+        </div>
     </form>
-    <button id="results-submit">SUBMIT</button>
-    <p>Players: <span id="players-count"></span></p>
+    <h2 id="players-text">Players:</h2>
     <ul id="players-list"></ul>
     </div>
     <script src="script.js"></script>
