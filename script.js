@@ -119,6 +119,13 @@ const questions = [
         imageAlt: "Fruit of the Loom Comparison",
         choices: ["It has a Cornucopia","It does not have a Cornucopia"],
         answer: "It does not have a Cornucopia"
+    },
+    {
+        question: "Which logo is correct?",
+        image: "./assets/images/cheez-it.png",
+        imageAlt: "CHEEZ-IT Comparison",
+        choices: ["CHEEZ-ITZ","CHEEZ-IT"],
+        answer: "CHEEZ-IT"
     }
 ]
 
