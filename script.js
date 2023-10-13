@@ -145,9 +145,9 @@ var timerEL = document.getElementById('timer');
 // Timer that counts down from 90 (seconds)
 function timerCountdown () {
 
-    var duration, minutes, seconds;
+    var minutes, seconds;
 
-    setInterval(function() {
+    const beginTimer = setInterval(function() {
         // Minutes are number of current total seconds divided by 60 (seconds in a minute).
         minutes = parseInt(timeLeft / 60, 10);
         // Seconds are calculated as the module 60 of the current total seconds counter.
@@ -160,10 +160,21 @@ function timerCountdown () {
         timerEL.textContent = minutes + ":" + seconds;
         
         if (--timeLeft < 0) {
-            timerEL.textContent = duration; // Duration keeps timer from going negative
+            clearInterval(beginTimer); // Stop the timer
+            timerEL.textContent = "00:00";
+            gameOver(); // Ends the quiz
         }
     }, 1000);
 };
+
+function gameOver() {
+    startBox.style.display = 'none';
+    questionBox.style.display = 'none';
+    resultsBox.style.display = 'block';
+    document.getElementById('score').textContent = score; // Display the player's score
+    console.log("Quiz completed!");
+}
+
 
 // Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
 function handleAnswerClick(click) {
