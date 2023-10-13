@@ -85,11 +85,11 @@ button:active {
 }
 
 input {
-    width: 85%;
+    width: 95%;
 }
 
 label {
-    text-align: left; 
+    padding-right: 2%;
 }
 
 #results-form {
@@ -97,7 +97,11 @@ label {
     text-align: left;
 }
 
-#results-text {
+#results-submit-align {
+    text-align: center;
+}
+
+#initials {
     font-size: 1rem;
     padding: 2%;
 }
@@ -113,8 +117,15 @@ label {
     background-color: hsl(352, 34%, 47%);
     color: hsl(0, 0%, 100%);
     padding: 1%;
-    margin-top: 1.5%;
-    text-align: center;
+    margin-top: 5%;
+}
+
+#players-text {
+    text-align: left;
+}
+
+#players-list {
+    font-size: 1.3rem;
 }
 
 #timer {

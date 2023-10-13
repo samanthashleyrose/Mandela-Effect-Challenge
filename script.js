@@ -1,16 +1,19 @@
 // All required elements
+
+let startBox = document.getElementById('start-box')
+
+let questionBox = document.getElementById('question-box')
 let currentQuestionIndex = 0;
 const questionEl = document.getElementById('question')
 const imageEl = document.getElementById('image')
 const choiceABtn = document.getElementById('choiceA')
 const choiceBBtn = document.getElementById('choiceB')
+let totalTime = 60 * 1.5;
+let timeLeft = totalTime
 
-let startBox = document.getElementById('start-box')
-let questionBox = document.getElementById('question-box')
-let scoreboard = document.getElementById('results-box')
-
-var totalTime = 60 * 1.5;
-var timeLeft = totalTime
+let score = 0;
+let resultsBox = document.getElementById('results-box')
+let playersList = document.getElementById('players-list');
 
 // If Start Quiz button is clicked then it will display the question box on top of it
 document.getElementById('start-btn').addEventListener('click', function (){
@@ -117,32 +120,6 @@ possibleAnswers.forEach(button => {
     button.addEventListener('click', handleAnswerClick);
 });
 
-
-// Function that will handle the answer button clicks and advance to the next question
-function handleAnswerClick(click) {
-    const selectedAnswer = click.target.textContent;
-    const currentQuestion = questions[currentQuestionIndex];
-
-        // condition checking if answer is wrong, then reduce the time by 15 secs
-        if(selectedAnswer !== currentQuestion.answer){
-            timeLeft -= 10;
-        }
-        currentQuestionIndex++; // Move to the next question
-        console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
-
-        if (currentQuestionIndex < questions.length) {
-            // If there are more questions, display the next question
-            displayCurrentQuestion();
-        } else {
-            // If there are no more questions
-            startBox.style.display = 'none';
-            questionBox.style.display = 'none';
-            scoreboard.style.display = 'block';
-            console.log("Quiz completed!");
-        }
-}
-
-
 // Function that will display the current question
 function displayCurrentQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
@@ -180,7 +157,80 @@ function timerCountdown () {
     }, 1000);
 };
 
+// Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
+function handleAnswerClick(click) {
+    const selectedAnswer = click.target.textContent;
+    const currentQuestion = questions[currentQuestionIndex];
+  
+    if (selectedAnswer === currentQuestion.answer) {
+      score++;
+    } else {
+      timeLeft -= 10;
+      console.log("-10 seconds!!!");
+    }
+  
+    currentQuestionIndex++;
+    console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
+  
+    if (currentQuestionIndex < questions.length) {
+      displayCurrentQuestion();
+    } else { // If no questions left
+      startBox.style.display = 'none';
+      questionBox.style.display = 'none';
+      resultsBox.style.display = 'block';
+      document.getElementById('score').textContent = score; // Displays the players score
+      console.log("Quiz completed!");
+    }
+  }
 
-document.getElementById('results-submit').addEventListener('click', function(){
-    console.log('Submit Results Button Clicked!');
-})
+// Defines the event listener for the form submission
+document.getElementById('results-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  console.log('Submit Results Button Clicked!');
+
+  // Gets the player's initials
+  let initials = document.getElementById('initials').value;
+
+  // Gets the current (formatted) date and time to display
+  const currentDate = new Date();
+  const dateOptions = { year: '2-digit', month: '2-digit', day: '2-digit' };
+  const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+
+  const formattedDate = currentDate.toLocaleDateString(undefined, dateOptions);
+  const formattedTime = currentDate.toLocaleTimeString(undefined, timeOptions);
+
+  let formattedDateTime = `${formattedDate} ${formattedTime}`;
+
+  // Creates a list item to display the player's information
+  const playersInfo = document.createElement('li');
+  playersInfo.textContent = `${initials} - Scored ${score} points on ${formattedDateTime}`; // How current player's information will be displayed after submitting
+
+  // Adds the player's information to the players list
+  playersList.appendChild(playersInfo);
+
+  // Saves the player's information to local storage
+  saveResultToLocalStorage(initials, score, formattedDateTime);
+
+  // Clears the input field
+  document.getElementById('initials').value = '';
+});
+
+// Function that will save the player's information to local storage
+function saveResultToLocalStorage(initials, score, formattedDateTime) {
+  const results = JSON.parse(localStorage.getItem('quizResults')) || [];
+  results.push({ initials, score, formattedDateTime });
+  localStorage.setItem('quizResults', JSON.stringify(results));
+}
+
+// Function that will display saved results in local storage
+function displaySavedResults() {
+  const savedResults = JSON.parse(localStorage.getItem('quizResults')) || [];
+
+  savedResults.forEach((result) => {
+    const playersInfo = document.createElement('li');
+    playersInfo.textContent = `${result.initials} - Scored ${result.score} points on ${result.formattedDateTime}`; // How past saved player's information will be displayed
+    playersList.appendChild(playersInfo);
+  });
+}
+displaySavedResults();
