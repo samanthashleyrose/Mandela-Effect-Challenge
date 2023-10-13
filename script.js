@@ -1,4 +1,4 @@
-// All required elements
+// GLOBAL VARIABLES //
 
 let startBox = document.getElementById('start-box')
 
@@ -14,6 +14,10 @@ let timeLeft = totalTime
 let score = 0;
 let resultsBox = document.getElementById('results-box')
 let playersList = document.getElementById('players-list');
+
+
+
+// START QUIZ SECTION //
 
 // If Start Quiz button is clicked then it will display the question box on top of it
 document.getElementById('start-btn').addEventListener('click', function (){
@@ -31,6 +35,10 @@ document.getElementById('start-btn').addEventListener('click', function (){
         console.log("Timer countdown has begun")
     }
 });
+
+
+
+// ACTIVE QUESTIONS SECTION //
 
 // Defines the values the question box will loop through 
 const questions = [
@@ -183,6 +191,10 @@ function handleAnswerClick(click) {
     }
   }
 
+
+  
+// SCORE AND RESULTS SECTION //
+
 // Defines the event listener for the form submission
 document.getElementById('results-form').addEventListener('submit', function (event) {
   event.preventDefault();
@@ -235,8 +247,7 @@ function displaySavedResults() {
 }
 displaySavedResults();
 
-// If Start Quiz button is clicked then it will display the question box on top of it
+// If Play Again button is clicked then it will reload the page
 document.getElementById('play-again-btn').addEventListener('click', function (){
-    console.log('Play Again Button Clicked!');
     location.reload();
 });
