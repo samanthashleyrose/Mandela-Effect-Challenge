@@ -234,3 +234,9 @@ function displaySavedResults() {
   });
 }
 displaySavedResults();
+
+// If Start Quiz button is clicked then it will display the question box on top of it
+document.getElementById('play-again-btn').addEventListener('click', function (){
+    console.log('Play Again Button Clicked!');
+    location.reload();
+});
