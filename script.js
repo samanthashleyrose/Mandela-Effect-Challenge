@@ -13,7 +13,7 @@ let timeLeft = totalTime;
 
 let score = 0;
 let gameOverMessage = document.getElementById('game-over');
-let gameCompletedMessage = document.getElementById('game-over');
+let gameCompletedMessage = document.getElementById('game-completed');
 let resultsBox = document.getElementById('results-box');
 let playersList = document.getElementById('players-list');
 
@@ -172,6 +172,8 @@ function timerCountdown () {
             clearInterval(beginTimer); // Stop the timer
             timerEL.textContent = "00:00";
             gameOver(); // Ends the quiz
+        } else {
+        timeLeft--;
         }
     }, 1000);
 };
@@ -182,7 +184,7 @@ function gameOver() {
     gameOverMessage.style.display = 'block';
     resultsBox.style.display = 'block';
     document.getElementById('score').textContent = score; // Display the player's score
-    console.log("Quiz completed!");
+    console.log("Game Over!");
 }
 
 
