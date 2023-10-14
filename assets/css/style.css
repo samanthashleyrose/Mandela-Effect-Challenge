@@ -108,6 +108,11 @@ p {
     text-align: left;
 }
 
+/* GAME OVER MESSAGAE */
+#game-over {
+    display: none;
+}
+
 /* RESULTS BOX */
 #results-box {
     z-index: 3;
