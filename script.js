@@ -8,7 +8,8 @@ const questionEl = document.getElementById('question');
 const imageEl = document.getElementById('image');
 const choiceABtn = document.getElementById('choiceA');
 const choiceBBtn = document.getElementById('choiceB');
-let totalTime = 60 * 1.5;
+const feedbackMessage = document.getElementById('feedback-message');
+let totalTime = 60 * 2;
 let timeLeft = totalTime;
 
 let score = 0;
@@ -16,7 +17,6 @@ let gameOverMessage = document.getElementById('game-over');
 let gameCompletedMessage = document.getElementById('game-completed');
 let resultsBox = document.getElementById('results-box');
 let playersList = document.getElementById('players-list');
-
 
 
 // START QUIZ SECTION //
@@ -37,7 +37,6 @@ document.getElementById('start-btn').addEventListener('click', function (){
         console.log("Timer countdown has begun")
     }
 });
-
 
 
 // ACTIVE QUESTIONS SECTION //
@@ -176,6 +175,40 @@ function timerCountdown () {
     }, 1000);
 };
 
+// Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
+function handleAnswerClick(click) {
+    const selectedAnswer = click.target.textContent;
+    const currentQuestion = questions[currentQuestionIndex];
+  
+    if (selectedAnswer === currentQuestion.answer) {
+      score++;
+      feedbackMessage.textContent = "Correct!";
+    } else {
+      timeLeft -= 10;
+      feedbackMessage.textContent = "Incorrect!",
+      setTimeout(() => {
+        timerEL.textContent = "-10 seconds!!!";
+        }); 
+      console.log("-10 seconds!!!");
+    }
+
+    // Remove the feedback message after a delay
+    setTimeout(() => {
+        feedbackMessage.textContent = "";
+    }, 3000);
+  
+    currentQuestionIndex++;
+    console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
+  
+    if (currentQuestionIndex < questions.length) {
+        setTimeout(() => {
+            displayCurrentQuestion() // Pauses before moving to next question
+        }, 3000);
+    } else { // If no questions left
+        gameCompleted();
+    }
+}
+
 function gameOver() {
     startBox.style.display = 'none';
     questionBox.style.display = 'none';
@@ -194,29 +227,7 @@ function gameCompleted() {
     console.log("Game Completed!");
 }
 
-// Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
-function handleAnswerClick(click) {
-    const selectedAnswer = click.target.textContent;
-    const currentQuestion = questions[currentQuestionIndex];
-  
-    if (selectedAnswer === currentQuestion.answer) {
-      score++;
-    } else {
-      timeLeft -= 10;
-      console.log("-10 seconds!!!");
-    }
-  
-    currentQuestionIndex++;
-    console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
-  
-    if (currentQuestionIndex < questions.length) {
-      displayCurrentQuestion();
-    } else { // If no questions left
-      gameCompleted();
-    }
-  }
 
-  
 // SCORE AND RESULTS SECTION //
 
 // Defines the event listener for the form submission

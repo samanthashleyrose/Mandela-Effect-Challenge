@@ -108,6 +108,11 @@ p {
     text-align: left;
 }
 
+#feedback-message {
+    font-size: var(--answer-button-font-size);
+    text-align: center;
+}
+
 /* GAME OVER MESSAGAES */
 #game-over {
     z-index: 4;
