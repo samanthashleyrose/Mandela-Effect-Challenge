@@ -12,6 +12,7 @@ let totalTime = 60 * 1.5;
 let timeLeft = totalTime
 
 let score = 0;
+let gameOverMessage = document.getElementById('game-over')
 let resultsBox = document.getElementById('results-box')
 let playersList = document.getElementById('players-list');
 
@@ -177,6 +178,7 @@ function timerCountdown () {
 function gameOver() {
     startBox.style.display = 'none';
     questionBox.style.display = 'none';
+    gameOverMessage.style.display = 'block'
     resultsBox.style.display = 'block';
     document.getElementById('score').textContent = score; // Display the player's score
     console.log("Quiz completed!");

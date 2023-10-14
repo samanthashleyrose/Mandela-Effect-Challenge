@@ -53,6 +53,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 <li><link><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">MDN Web Docs z-index</a></link></li>
 <li><link><a href="https://www.w3schools.com/js/js_json_parse.asp">W3schools JSON.parse()</a></link></li>
 <li><link><a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">W3schools Javascript Date toLocaleString</a></link></li>
+<li><link><a href="https://www.w3schools.com/js/js_htmldom_document.asp">W3schools Javascript HTML DOM Document</a></link></li>
 <li><link><a href="https://simplestepscode.com/javascript-quiz-tutorial/">How to make a simple JavaScript quiz - Simple Steps Code</a></link></li>
 <li><link><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"> Countdown Timer - Stackoverflow</a></link></li>
 <li><link><a href="https://stackoverflow.com/questions/40723239/i-need-some-explanation-for-some-of-this-code"> Timer Explanation - Stackoverflow</a></link></li>
