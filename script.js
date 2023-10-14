@@ -172,8 +172,6 @@ function timerCountdown () {
             clearInterval(beginTimer); // Stop the timer
             timerEL.textContent = "00:00";
             gameOver(); // Ends the quiz
-        } else {
-        timeLeft--;
         }
     }, 1000);
 };
@@ -187,6 +185,14 @@ function gameOver() {
     console.log("Game Over!");
 }
 
+function gameCompleted() {
+    startBox.style.display = 'none';
+    questionBox.style.display = 'none';
+    gameCompletedMessage.style.display = 'block';
+    resultsBox.style.display = 'block';
+    document.getElementById('score').textContent = score; // Display the player's score
+    console.log("Game Completed!");
+}
 
 // Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
 function handleAnswerClick(click) {
@@ -206,15 +212,9 @@ function handleAnswerClick(click) {
     if (currentQuestionIndex < questions.length) {
       displayCurrentQuestion();
     } else { // If no questions left
-      startBox.style.display = 'none';
-      questionBox.style.display = 'none';
-      gameCompletedMessage.style.display = 'block';
-      resultsBox.style.display = 'block';
-      document.getElementById('score').textContent = score; // Displays the players score
-      console.log("Quiz completed!");
+      gameCompleted();
     }
   }
-
 
   
 // SCORE AND RESULTS SECTION //
