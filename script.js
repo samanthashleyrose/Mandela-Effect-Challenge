@@ -1,19 +1,20 @@
 // GLOBAL VARIABLES //
 
-let startBox = document.getElementById('start-box')
+let startBox = document.getElementById('start-box');
 
-let questionBox = document.getElementById('question-box')
+let questionBox = document.getElementById('question-box');
 let currentQuestionIndex = 0;
-const questionEl = document.getElementById('question')
-const imageEl = document.getElementById('image')
-const choiceABtn = document.getElementById('choiceA')
-const choiceBBtn = document.getElementById('choiceB')
+const questionEl = document.getElementById('question');
+const imageEl = document.getElementById('image');
+const choiceABtn = document.getElementById('choiceA');
+const choiceBBtn = document.getElementById('choiceB');
 let totalTime = 60 * 1.5;
-let timeLeft = totalTime
+let timeLeft = totalTime;
 
 let score = 0;
-let gameOverMessage = document.getElementById('game-over')
-let resultsBox = document.getElementById('results-box')
+let gameOverMessage = document.getElementById('game-over');
+let gameCompletedMessage = document.getElementById('game-over');
+let resultsBox = document.getElementById('results-box');
 let playersList = document.getElementById('players-list');
 
 
@@ -178,7 +179,7 @@ function timerCountdown () {
 function gameOver() {
     startBox.style.display = 'none';
     questionBox.style.display = 'none';
-    gameOverMessage.style.display = 'block'
+    gameOverMessage.style.display = 'block';
     resultsBox.style.display = 'block';
     document.getElementById('score').textContent = score; // Display the player's score
     console.log("Quiz completed!");
@@ -205,6 +206,7 @@ function handleAnswerClick(click) {
     } else { // If no questions left
       startBox.style.display = 'none';
       questionBox.style.display = 'none';
+      gameCompletedMessage.style.display = 'block';
       resultsBox.style.display = 'block';
       document.getElementById('score').textContent = score; // Displays the players score
       console.log("Quiz completed!");

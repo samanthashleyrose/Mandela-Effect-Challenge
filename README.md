@@ -29,7 +29,7 @@ No installation is necessary.
 ## Usage
 
 Use images provided to decided which answer is correct 
-Timer - 10 second penalization per wrong answer
+Timer - 10 second penalization per wrong answer - Game over message if time runs out
 
 Local Storage will dipslay results on results box and also in applications under dev tools
 

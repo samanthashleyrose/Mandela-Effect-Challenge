@@ -108,8 +108,14 @@ p {
     text-align: left;
 }
 
-/* GAME OVER MESSAGAE */
+/* GAME OVER MESSAGAES */
 #game-over {
+    z-index: 4;
+    display: none;
+}
+
+#game-completed {
+    z-index: 4;
     display: none;
 }
 
