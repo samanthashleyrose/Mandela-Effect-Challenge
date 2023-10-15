@@ -194,30 +194,38 @@ input {
 /* XXS -- EX. iPhone 5/SE */
 @media (min-width: 300px) {
     p {
-        font-size: .89rem;
+        font-size: .42rem;
         margin-left: 0%;
         margin-right: 0%;
     }
     h1 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
     #start-box-title {
-        font-size: 1rem;
+        font-size: .8rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: .7rem;
-        padding: 1%;
+        font-size: .5rem;
+        padding: 2%;
+        border-width: 2px;
+    }
+    input {
+        height: 9px;
+    }
+    input::placeholder {
+        font-size: .5rem;
+        text-align: center;
     }
     #timer {
-        font-size: .7rem;
+        font-size: .4rem;
     }
     #image {
         max-width: 100%;
     }
     #question {
-        font-size: 1rem;
+        font-size: .7rem;
     }
     #choiceA,
     #choiceB,
@@ -225,15 +233,64 @@ input {
     h3,
     #feedback-message,
     #end-game-message{
-        font-size: .7rem;
+        font-size: .5rem;
     }
     #players-list {
-        font-size: .6rem;
-
+        font-size: .4rem;
     }
 }
 
-/* XS -- iPhone 14 Pro Max */
+/* XXS -- iPhone 14 Pro Max */
+@media (min-width: 363px) {
+    p {
+        font-size: .5rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    h1 {
+        font-size: .8rem;
+    }
+    #start-box-title {
+        font-size: .8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: .5rem;
+        padding: 1.5%;
+        border-width: 2px;
+    }
+    #timer {
+        font-size: .5rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question {
+        font-size: .8rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: .6rem;
+    }
+    input {
+        width: 91%;
+        height: 9px;
+    }
+    input::placeholder {
+        font-size: .5rem;
+        text-align: center;
+    }
+    #players-list {
+        font-size: .5rem;
+    }
+}
+
+/* XS */
 @media (min-width: 430px) {
     p {
         font-size: .74rem;
@@ -250,7 +307,8 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: .7rem;
-        padding: 1%;
+        padding: 1.5%;
+        border-width: 3px;
     }
     #timer {
         font-size: .7rem;
@@ -269,8 +327,15 @@ input {
     #end-game-message{
         font-size: .8rem;
     }
+    input {
+        height: 9px;
+    }
+    input::placeholder {
+        font-size: .6rem;
+        text-align: center;
+    }
     #players-list {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 }
 
@@ -291,7 +356,8 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: .9rem;
-        padding: 1%;
+        padding: 1.5%;
+        border-width: 3px;
     }
     #timer {
         font-size: .7rem;
@@ -306,10 +372,17 @@ input {
     h3,
     #feedback-message,
     #end-game-message{
-        font-size: 1rem;
+        font-size: .9rem;
+    }
+    input {
+        height: 9px;
+    }
+    input::placeholder {
+        font-size: .65rem;
+        text-align: center;
     }
     #players-list {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }
 
@@ -321,7 +394,7 @@ input {
         margin-right: 0%;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     #start-box-title {
         font-size: 1.1rem;
@@ -330,6 +403,8 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: .9rem;
+        padding: 1.5%;
+        border-width: 4px;
     }
     #timer {
         font-size: .7rem;
@@ -344,10 +419,18 @@ input {
     h3,
     #feedback-message,
     #end-game-message{
-        font-size: 1rem;
+        font-size: .95rem;
+    }
+    input {
+        height: 10px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: .7rem;
+        text-align: center;
     }
     #players-list {
-        font-size: .8rem;
+        font-size: .75rem;
     }
 }
 
@@ -368,6 +451,8 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: 1rem;
+        padding: 1.5%;
+        border-width: 5px;
     }
     #timer {
         font-size: .7rem;
@@ -385,6 +470,14 @@ input {
     #feedback-message,
     #end-game-message{
         font-size: 1rem;
+    }
+    input {
+        height: 10px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: .8rem;
+        text-align: center;
     }
     #players-list {
         font-size: .9rem;
@@ -408,6 +501,9 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: 1rem;
+        font-size: 1rem;
+        padding: 1.5%;
+        border-width: 5px;
     }
     #timer {
         font-size: .7rem;
@@ -425,6 +521,14 @@ input {
     #feedback-message,
     #end-game-message{
         font-size: 1.1rem;
+    }
+    input {
+        height: 10px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: .9rem;
+        text-align: center;
     }
     #players-list {
         font-size: 1rem;
@@ -448,6 +552,9 @@ input {
     #results-submit,
     #play-again-btn {
         font-size: 1.1rem;
+        font-size: 1rem;
+        padding: 1.5%;
+        border-width: 5px;
     }
     #timer {
         font-size: .7rem;
@@ -466,6 +573,14 @@ input {
     #end-game-message{
         font-size: 1.2rem;
     }
+    input {
+        height: 11px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: .95rem;
+        text-align: center;
+    }
     #players-list {
         font-size: 1rem;
     }
@@ -477,6 +592,56 @@ input {
         font-size: 1.4rem;
         margin-left: 15%;
         margin-right: 15%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #start-box-title {
+        font-size: 2rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.3rem;
+        padding: 1.5%;
+        border-width: 6px;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 95%;
+    }
+    #question {
+        font-size: 2rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1.4rem;
+    }
+    input {
+        height: 12px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: 1rem;
+        text-align: center;
+    }
+    #players-list {
+        font-size: 1.2rem;
+    }
+} 
+
+/* 2XL LG -- Macbook Pro 16 inch */
+@media (min-width: 1700px) {
+    p {
+        font-size: 1.4rem;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     h1 {
         font-size: 2rem;
@@ -518,17 +683,21 @@ input {
         margin-left: 23%;
         margin-right: 23%;
     }
+    h1 {
+        font-size: 2rem;
+    }
     #start-box-title {
         font-size: 2.2rem;
     }
     #start-btn {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 1%;
     }
     #results-submit,
     #play-again-btn {
-        font-size: 1.8rem;
-        padding: 1.2%;
+        font-size: 1.6rem;
+        padding: 1.5%;
+        border-width: 6px;
     }
     #timer {
         font-size: 1rem;
@@ -547,6 +716,14 @@ input {
     #feedback-message,
     #end-game-message{
         font-size: 1.5rem;
+    }
+    input {
+        height: 20px;
+        width: 91%;
+    }
+    input::placeholder {
+        font-size: 1.3rem;
+        text-align: center;
     }
     #players-list {
         font-size: 1.3rem;
