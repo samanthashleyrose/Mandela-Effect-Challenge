@@ -28,16 +28,9 @@ No installation is necessary.
 
 ## Usage
 
-Use images provided to decided which answer is correct 
-Timer - 10 second penalization per wrong answer - Game over message if time runs out
-
-Local Storage will dipslay results on results box and also in applications under dev tools
-
-Play again button will reload the page to start over
+After reading the description on the front page, click start to begin. The first question will appear as well as a 2 minute timer countdown. Use the images provided to decided which answer is correct. When you will be breifly notified whether you've selected an correct or incorrect answer before the next question generates. If you've selected an incorrect answer the timer will decrease by 10 seconds and display a message noifing you as well. If the timer hits 0 before you've answered all 12 questions, the results page will appear with the message "Game Over". If you've answered all 12 questions before the timer hits 0, the results page will appear with the message "Game Completed". As you play the game, the system keeps track of all of your correct answers and displays your total score on the results page. See Features to watch how to save your score and play again!
 
 Video from start button to results screen displayed then play agian is pressed - LInk to features on how to save your score 
-
-Provide instructions and examples for use. Include screenshots as needed.
 
 ## Credits
 
@@ -52,15 +45,20 @@ Provide instructions and examples for use. Include screenshots as needed.
 <li><link><a href="https://chat.openai.com/">ChatGPT</a></link></li>
 <li><link><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">MDN Web Docs z-index</a></link></li>
 <li><link><a href="https://www.w3schools.com/js/js_json_parse.asp">W3schools JSON.parse()</a></link></li>
+<li><link><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">W3schools Window setTimeout()</a></link></li>
+<li><link><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"> Countdown Timer - Stackoverflow</a></link></li>
+<li><link><a href="https://stackoverflow.com/questions/40723239/i-need-some-explanation-for-some-of-this-code"> Timer Explanation - Stackoverflow</a></link></li>
 <li><link><a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">W3schools Javascript Date toLocaleString</a></link></li>
 <li><link><a href="https://www.w3schools.com/js/js_htmldom_document.asp">W3schools Javascript HTML DOM Document</a></link></li>
 <li><link><a href="https://simplestepscode.com/javascript-quiz-tutorial/">How to make a simple JavaScript quiz - Simple Steps Code</a></link></li>
-<li><link><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"> Countdown Timer - Stackoverflow</a></link></li>
-<li><link><a href="https://stackoverflow.com/questions/40723239/i-need-some-explanation-for-some-of-this-code"> Timer Explanation - Stackoverflow</a></link></li>
 <li><link><a href="https://www.youtube.com/watch?v=WUBhpSRS_fk">Create a Quiz App with Timer using HTML CSS & JavaScript | CodingNepal - YouTube</a></link></li>
 <li><link><a href="https://www.goodhousekeeping.com/life/entertainment/g28438966/mandela-effect-examples/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_d_bm_prog_org_us_g28438966&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzEm3ILlTVFh9cMIXKPhYzc6PSgRWb6MrEcwgHy8IygZhuaA6ZZ4rTxoCr_cQAvD_BwE">53 Mandela Effect Examples That Will Make Question Everything - Good Housekeeping</a></link></li>
 
 ## Features
+
+Local Storage will dipslay results on results box and also in applications under dev tools
+
+Play again button will reload the page to start over
 
 Video on Saving your score!
 

@@ -468,3 +468,45 @@ input {
         font-size: 1.2rem;
     }
 } 
+
+/* 3XL LG */
+@media (min-width: 2000px) {
+    p {
+        font-size: 1.5rem;
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+    #start-box-title {
+        font-size: 2.2rem;
+    }
+    #start-btn {
+        font-size: 1.8rem;
+        padding: 1%;
+    }
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.8rem;
+        padding: 1.2%;
+    }
+    #timer {
+        font-size: 1rem;
+    }
+    #image {
+        max-width: 90%;
+    }
+    #question {
+        font-size: 2.2rem;
+    }
+    #choiceA,
+    #choiceB {
+        font-size: 1.8rem;
+        padding: 3.5%;
+    }
+    #feedback-message,
+    #end-game-message{
+        font-size: 1.5rem;
+    }
+    #players-list {
+        font-size: 1.3rem;
+    }
+}
