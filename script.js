@@ -54,7 +54,7 @@ const questions = [
     },
     {
         question: "Which logo is correct?",
-        image: "./assets/images/jiffy.png",
+        image: "./assets/images/jiffy-copy.png",
         imageAlt: "JIF Comparison",
         choices: ["JIFFY","JIF"],
         answer: "JIF"
