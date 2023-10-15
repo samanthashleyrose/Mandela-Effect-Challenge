@@ -51,7 +51,6 @@ const questions = [
         imageAlt: "Looney Toons/Tunes Comparison",
         choices: ["Looney Toons", "Looney Tunes"],
         answer: "Looney Tunes"
-        
     },
     {
         question: "Which logo is correct?",
@@ -144,6 +143,7 @@ function displayCurrentQuestion() {
 
     questionEl.textContent = currentQuestion.question;
     imageEl.src = currentQuestion.image;
+    imageEl.alt = currentQuestion.imageAlt;
     choiceABtn.textContent = currentQuestion.choices[0];
     choiceBBtn.textContent = currentQuestion.choices[1];
 }
