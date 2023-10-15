@@ -114,16 +114,11 @@ p {
     text-align: center;
 }
 
-/* GAME OVER MESSAGAES */
-#game-over {
-    z-index: 4;
-    display: none;
+/* GAME OVER MESSAGES */
+#end-game-message {
+    font-size: 1.5rem;
 }
 
-#game-completed {
-    z-index: 4;
-    display: none;
-}
 
 /* RESULTS BOX */
 #results-box {
@@ -136,7 +131,6 @@ p {
 }
 
 #results-form {
-    font-size: 1.5rem;
     text-align: left;
 }
 
@@ -194,3 +188,283 @@ input {
     margin-top: 1.5%;
     text-align: center;
 }
+
+/* RESPONSIVENESS */
+
+/* XXS -- EX. iPhone 5/SE */
+@media (min-width: 300px) {
+    p {
+        font-size: .89rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    #start-box-title {
+        font-size: 1rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: .8rem;
+        padding: .1%;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question {
+        font-size: 1rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: .7rem;
+    }
+    #players-list {
+        font-size: .6rem;
+
+    }
+}
+
+/* XS */
+@media (min-width: 475px) {
+    p {
+        font-size: .8rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #start-box-title {
+        font-size: .9rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: .9rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question,
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1rem;
+    }
+    #players-list {
+        font-size: .8rem;
+    }
+}
+
+/* S -- EX. Microsoft Lumia 550 */
+@media (min-width: 640px) {
+    p {
+        font-size: .8rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #start-box-title {
+        font-size: 1.1rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: .9rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question,
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1rem;
+    }
+    #players-list {
+        font-size: .8rem;
+    }
+}
+
+/* M -- EX. iPad */
+@media (min-width: 768px) {
+    p {
+        font-size: 1rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #start-box-title {
+        font-size: 1.3rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question {
+        font-size: 1.4rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1rem;
+    }
+    #players-list {
+        font-size: .9rem;
+    }
+}
+
+/* LG -- EX. iPad Pro */
+@media (min-width: 1024px) {
+    p {
+        font-size: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #start-box-title {
+        font-size: 1.5rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 95%;
+    }
+    #question {
+        font-size: 1.4rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1.1rem;
+    }
+    #players-list {
+        font-size: 1rem;
+    }
+}
+
+/* XL LG -- EX. Nest Hub Max */
+@media (min-width: 1280px) {
+    p {
+        font-size: 1.2rem;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #start-box-title {
+        font-size: 1.8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.1rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 95%;
+    }
+    #question {
+        font-size: 1.6rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1.2rem;
+    }
+    #players-list {
+        font-size: 1rem;
+    }
+}
+
+/* 2XL LG */
+@media (min-width: 1536px) {
+    p {
+        font-size: 1.4rem;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #start-box-title {
+        font-size: 2rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.3rem;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 95%;
+    }
+    #question {
+        font-size: 2rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #feedback-message,
+    #end-game-message{
+        font-size: 1.4rem;
+    }
+    #players-list {
+        font-size: 1.2rem;
+    }
+} 
