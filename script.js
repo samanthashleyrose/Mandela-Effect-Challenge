@@ -9,25 +9,22 @@ const imageEl = document.getElementById('image');
 const choiceABtn = document.getElementById('choiceA');
 const choiceBBtn = document.getElementById('choiceB');
 const feedbackMessage = document.getElementById('feedback-message');
-const endGameMessage = document.getElementById('end-game-message');
 const timerEL = document.getElementById('timer');
 let totalTime = 60 * 2;
 let timeLeft = totalTime;
 
 let score = 0;
-let gameOverMessage = document.getElementById('game-over');
-let gameCompletedMessage = document.getElementById('game-completed');
 let resultsBox = document.getElementById('results-box');
-let playersList = document.getElementById('players-list');
-
+const endGameMessage = document.getElementById('end-game-message');
+const playersList = document.getElementById('players-list');
 
 // START QUIZ SECTION //
 
-// If Start Quiz button is clicked then it will display the question box on top of it
+// If Start Quiz button is clicked then it will display the question box
 document.getElementById('start-btn').addEventListener('click', function (){
     console.log('Start Button Clicked!');
 
-    timerCountdown();
+    timerCountdown(); // Starts timer
 
     if (questionBox.style.display === 'none') {
         startBox.style.display = 'block';
@@ -149,18 +146,18 @@ function displayCurrentQuestion() {
 }
 displayCurrentQuestion();
 
-// Timer that counts down from 120 (seconds)
+// Timer that counts down from 120 (seconds), displays as 2:00
 function timerCountdown () {
 
     var minutes, seconds;
 
     const beginTimer = setInterval(function() {
-        // Minutes are number of current total seconds divided by 60 (seconds in a minute).
+        // Minutes are number of current total seconds divided by 60
         minutes = parseInt(timeLeft / 60, 10);
         // Seconds are calculated as the module 60 of the current total seconds counter.
         seconds = parseInt(timeLeft % 60, 10);
 
-        // condition to test ? value if true : value if false
+        //   condition to test ? value if true : value if false
         minutes = minutes < 10 ? '0' + minutes : minutes;
         seconds = seconds < 10 ? '0' + seconds : seconds;
 
@@ -178,27 +175,26 @@ function timerCountdown () {
     }, 1000);
 };
 
-
 // Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
 function handleAnswerClick(click) {
     const selectedAnswer = click.target.textContent;
     const currentQuestion = questions[currentQuestionIndex];
   
     if (selectedAnswer === currentQuestion.answer) {
-      score++;
-      feedbackMessage.textContent = 'Correct! ﹢1 point';
-      feedbackMessage.style.color = 'rgb(28, 115, 20)';
+        score++;
+        feedbackMessage.textContent = 'Correct! ﹢1 point';
+        feedbackMessage.style.color = 'rgb(28, 115, 20)';
     } else {
-      setTimeout(() => {
-      timerEL.textContent = '-10 seconds!!!';
-      });
-      timeLeft -= 10;
-      feedbackMessage.textContent = 'Incorrect! ☹';
-      feedbackMessage.style.color = 'rgb(187, 11, 11)';
-      console.log('-10 seconds!!!');
+        setTimeout(() => {
+        timerEL.textContent = '-10 seconds!!!';
+        });
+        timeLeft -= 10;
+        feedbackMessage.textContent = 'Incorrect! ☹';
+        feedbackMessage.style.color = 'rgb(187, 11, 11)';
+        console.log('-10 seconds!!!');
     }
 
-    // Remove the feedback message after a delay
+    // Remove the feedback message after a 1.5 second delay
     setTimeout(() => {
         feedbackMessage.textContent = '';
     }, 1500);
@@ -208,7 +204,7 @@ function handleAnswerClick(click) {
   
     if (currentQuestionIndex < questions.length) {
         setTimeout(() => {
-            displayCurrentQuestion(); // Pauses before moving to next question
+            displayCurrentQuestion(); // Pauses for 1.5 seconds before moving to next question
         }, 1500);
     } else { // If no questions left
         gameCompleted();
@@ -216,6 +212,9 @@ function handleAnswerClick(click) {
     }
 }
 
+// SCORE AND RESULTS SECTION //
+
+// Function to display results box and current players score
 function gameCompleted() {
     startBox.style.display = 'none';
     questionBox.style.display = 'none';
@@ -224,13 +223,9 @@ function gameCompleted() {
     console.log('Game Completed!');
 }
 
-
-// SCORE AND RESULTS SECTION //
-
 // Defines the event listener for the form submission
 document.getElementById('results-form').addEventListener('submit', function (event) {
   event.preventDefault();
-
   console.log('Submit Results Button Clicked!');
 
   // Gets the player's initials
@@ -248,7 +243,7 @@ document.getElementById('results-form').addEventListener('submit', function (eve
 
   // Creates a list item to display the player's information
   const playersInfo = document.createElement('li');
-  playersInfo.textContent = `${initials} - Scored ${score} points on ${formattedDateTime}`; // How current player's information will be displayed after submitting
+  playersInfo.textContent = `${initials} - Scored ${score} points on ${formattedDateTime}`; // How submitted information will be displayed under Player History
 
   // Adds the player's information to the players list
   playersList.appendChild(playersInfo);
@@ -256,25 +251,25 @@ document.getElementById('results-form').addEventListener('submit', function (eve
   // Saves the player's information to local storage
   saveResultToLocalStorage(initials, score, formattedDateTime);
 
-  // Clears the input field
+  // Clears the initials input field
   document.getElementById('initials').value = '';
 });
 
 // Function that will save the player's information to local storage
 function saveResultToLocalStorage(initials, score, formattedDateTime) {
-  const results = JSON.parse(localStorage.getItem('quizResults')) || [];
-  results.push({ initials, score, formattedDateTime });
-  localStorage.setItem('quizResults', JSON.stringify(results));
+    const results = JSON.parse(localStorage.getItem('quizResults')) || [];
+    results.push({ initials, score, formattedDateTime });
+    localStorage.setItem('quizResults', JSON.stringify(results));
 }
 
 // Function that will display saved results in local storage
 function displaySavedResults() {
-  const savedResults = JSON.parse(localStorage.getItem('quizResults')) || [];
+    const savedResults = JSON.parse(localStorage.getItem('quizResults')) || [];
 
-  savedResults.forEach((result) => {
-    const playersInfo = document.createElement('li');
-    playersInfo.textContent = `${result.initials} - Scored ${result.score} points on ${result.formattedDateTime}`; // How past saved player's information will be displayed
-    playersList.appendChild(playersInfo);
+    savedResults.forEach((result) => {
+        const playersInfo = document.createElement('li');
+        playersInfo.textContent = `${result.initials} - Scored ${result.score} points on ${result.formattedDateTime}`; // How past saved player's information will be displayed
+        playersList.appendChild(playersInfo);
   });
 }
 displaySavedResults();
