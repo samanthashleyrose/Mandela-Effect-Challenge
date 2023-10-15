@@ -2,17 +2,16 @@
 
 ## Description
 
-How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another. How well do you think your memory is? -- Take the Mandela Effect Challenge (insert deployed link here) and put your memory to the test! 
+How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another. Think you can beat the odds? -- Take the Mandela Effect Challenge (insert deployed link here) and put your memory to the test! 
 
-The quiz consists of 12 pop-culture related questions that you will need to answer within 90 seconds. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
+The quiz consists of 12 pop-culture related questions that you will need to answer within 2 minutes. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
 
-Using HTML, CSS, and JavaScript I was able to create an interactive site to host the game. By properly writing and organizing the code 
+Using HTML, CSS, and JavaScript I was able to create an interactive site to host the game. Making sure to properly write and organize the code allowed for each component to communicate efficiently with each other which made for successful functionality. During the creation of this project, I learned the value of:
 
-During this creating of this project, I learned the value of:
 - The Document Object
-    - The Document Object in JavaScript has a multitude of properties and methods that can access and manipulate your HTML to provide creative functionality. This site uses the .getElementById method and .addEventListener method many times to use the HTML obtain goals like button pressing and displaying different boxes.
+    - The Document Object in JavaScript has a multitude of properties and methods that can access and manipulate your HTML to provide creative functionality. This site uses the .getElementById method and .addEventListener method many times to use the HTML to obtain goals like button pressing and displaying different boxes.
 - Local Storage
-    - What fun is a game if you can't keep track of your score and other's scores? Local storage allows the site to save the current players information (name, score, date) so they can play the game again and compare their progress. In addition, the player could then compare their scores with any friends who play as well. 
+    - What fun is a game if you can't keep track of the players scores? Local storage allows the site to save the current players information (name, score, date) so they can play the game again and compare their progress. In addition, the player could then compare their scores with any friends who play as well. 
 
 
 ## Table of Contents
@@ -28,9 +27,9 @@ No installation is necessary.
 
 ## Usage
 
-After reading the description on the front page, click start to begin. The first question will appear as well as a 2 minute timer countdown. Use the images provided to decided which answer is correct. When you will be breifly notified whether you've selected an correct or incorrect answer before the next question generates. If you've selected an incorrect answer the timer will decrease by 10 seconds and display a message noifing you as well. If the timer hits 0 before you've answered all 12 questions, the results page will appear with the message "Game Over". If you've answered all 12 questions before the timer hits 0, the results page will appear with the message "Game Completed". As you play the game, the system keeps track of all of your correct answers and displays your total score on the results page. See Features to watch how to save your score and play again!
+After reading the description on the front page, click the "Start Quiz" button to begin. The first question will appear along with a 2 minute timer. Use the images provided to decided which answer is correct. After making a selection you will be briefly notified whether you've selected a correct or incorrect answer before the next question is generated. In addition, if you've selected an incorrect answer the timer will decrease by 10 seconds and display a message notifying the time has been deducted as well. If the timer hits 00:00 before you've answered all 12 questions, the results page will appear with the message "Game Over". If you've answered all 12 questions before the timer hits 00:00, the results page will appear with the message "Game Completed". As you play the game, the system keeps track of all correct answers and displays your total score on the results page. See [Features](#features) to watch how to save your score and play again!
 
-Video from start button to results screen displayed then play agian is pressed - LInk to features on how to save your score 
+insert Video from start button to results screen displayed then play agian is pressed
 
 ## Credits
 
@@ -56,11 +55,11 @@ Video from start button to results screen displayed then play agian is pressed -
 
 ## Features
 
-Local Storage will dipslay results on results box and also in applications under dev tools
+Say you've finished the game with a score you want to remember, the results page has a built-in feature to complete that task. Go ahead and enter your initials/nickname into the field on the page and click submit. You'll immediately see your entered information display under Player History along with the date and time you played. Great! Now that your results are saved, want to give it another go? Click Play Again to reload the page! You can save your score an unlimited amount of time to track your progress and compare against other players as well. 
 
-Play again button will reload the page to start over
+insert Video on Saving your score!
 
-Video on Saving your score!
+The Player History Feature uses Local Storage to display the results onto the screen but they are also listed in Chrome Dev Tool under Applications for additional reference.
 
 ## License
 
