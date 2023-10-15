@@ -9,6 +9,8 @@ const imageEl = document.getElementById('image');
 const choiceABtn = document.getElementById('choiceA');
 const choiceBBtn = document.getElementById('choiceB');
 const feedbackMessage = document.getElementById('feedback-message');
+const endGameMessage = document.getElementById('end-game-message');
+const timerEL = document.getElementById('timer');
 let totalTime = 60 * 2;
 let timeLeft = totalTime;
 
@@ -25,7 +27,6 @@ let playersList = document.getElementById('players-list');
 document.getElementById('start-btn').addEventListener('click', function (){
     console.log('Start Button Clicked!');
 
-    display = document.querySelector('#timer');
     timerCountdown();
 
     if (questionBox.style.display === 'none') {
@@ -33,8 +34,9 @@ document.getElementById('start-btn').addEventListener('click', function (){
         questionBox.style.display = 'none';
     } else {
         startBox.style.display = 'none';
+        timerEL.style.display = 'block';
         questionBox.style.display = 'block';
-        console.log("Timer countdown has begun")
+        console.log('Timer countdown has begun');
     }
 });
 
@@ -147,10 +149,7 @@ function displayCurrentQuestion() {
 }
 displayCurrentQuestion();
 
-// Connects to h3 timer in HTML
-var timerEL = document.getElementById('timer');
-
-// Timer that counts down from 90 (seconds)
+// Timer that counts down from 120 (seconds)
 function timerCountdown () {
 
     var minutes, seconds;
@@ -162,18 +161,23 @@ function timerCountdown () {
         seconds = parseInt(timeLeft % 60, 10);
 
         // condition to test ? value if true : value if false
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
 
-        timerEL.textContent = minutes + ":" + seconds;
+        timerEL.textContent = minutes + ':' + seconds;
         
-        if (--timeLeft < 0) {
+        if (--timeLeft < 0 && currentQuestionIndex < questions.length) {
             clearInterval(beginTimer); // Stop the timer
-            timerEL.textContent = "00:00";
-            gameOver(); // Ends the quiz
+            timerEL.textContent = '00:00'
+            gameCompleted(); // Ends the quiz
+            endGameMessage.textContent = 'Game Over ☹';
+            console.log('Game Over!');
+        } else {
+            timeLeft--;
         }
     }, 1000);
 };
+
 
 // Function that will handle the answer button clicks, will increment the score for correct answers, and will advance to the next question
 function handleAnswerClick(click) {
@@ -182,49 +186,42 @@ function handleAnswerClick(click) {
   
     if (selectedAnswer === currentQuestion.answer) {
       score++;
-      feedbackMessage.textContent = "Correct!";
+      feedbackMessage.textContent = 'Correct! ﹢1 point';
+      feedbackMessage.style.color = 'rgb(28, 115, 20)';
     } else {
-      timeLeft -= 10;
-      feedbackMessage.textContent = "Incorrect!",
       setTimeout(() => {
-        timerEL.textContent = "-10 seconds!!!";
-        }); 
-      console.log("-10 seconds!!!");
+      timerEL.textContent = '-10 seconds!!!';
+      });
+      timeLeft -= 10;
+      feedbackMessage.textContent = 'Incorrect! ☹';
+      feedbackMessage.style.color = 'rgb(187, 11, 11)';
+      console.log('-10 seconds!!!');
     }
 
     // Remove the feedback message after a delay
     setTimeout(() => {
-        feedbackMessage.textContent = "";
-    }, 3000);
-  
+        feedbackMessage.textContent = '';
+    }, 1500);
+
     currentQuestionIndex++;
-    console.log("User Selected: " + selectedAnswer + ". The correct answer is " + currentQuestion.answer);
+    console.log('User Selected: ' + selectedAnswer + '. The correct answer is ' + currentQuestion.answer);
   
     if (currentQuestionIndex < questions.length) {
         setTimeout(() => {
-            displayCurrentQuestion() // Pauses before moving to next question
-        }, 3000);
+            displayCurrentQuestion(); // Pauses before moving to next question
+        }, 1500);
     } else { // If no questions left
         gameCompleted();
+        endGameMessage.textContent = 'Game Completed ☺';
     }
-}
-
-function gameOver() {
-    startBox.style.display = 'none';
-    questionBox.style.display = 'none';
-    gameOverMessage.style.display = 'block';
-    resultsBox.style.display = 'block';
-    document.getElementById('score').textContent = score; // Display the player's score
-    console.log("Game Over!");
 }
 
 function gameCompleted() {
     startBox.style.display = 'none';
     questionBox.style.display = 'none';
-    gameCompletedMessage.style.display = 'block';
     resultsBox.style.display = 'block';
     document.getElementById('score').textContent = score; // Display the player's score
-    console.log("Game Completed!");
+    console.log('Game Completed!');
 }
 
 
