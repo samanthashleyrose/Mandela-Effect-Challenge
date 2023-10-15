@@ -2,7 +2,7 @@
 
 ## Description
 
-How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another. Think you can beat the odds? -- Take the Mandela Effect Challenge (insert deployed link here) and put your memory to the test! 
+How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another. Think you can beat the odds? -- Take the <link><a href="https://samanthashleyrose.github.io/module04-challenge/">Mandela Effect Challenge</a></link> and put your memory to the test!  
 
 The quiz consists of 12 pop-culture related questions that you will need to answer within 2 minutes. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
 
@@ -30,7 +30,10 @@ No installation is necessary.
 
 After reading the description on the front page, click the "Start Quiz" button to begin. The first question will appear along with a 2 minute timer. Use the images provided to decided which answer is correct. After making a selection you will be briefly notified whether you've selected a correct or incorrect answer before the next question is generated. In addition, if you've selected an incorrect answer the timer will decrease by 10 seconds and display a message notifying the time has been deducted as well. If the timer hits 00:00 before you've answered all 12 questions, the results page will appear with the message "Game Over". If you've answered all 12 questions before the timer hits 00:00, the results page will appear with the message "Game Completed". As you play the game, the system keeps track of all correct answers and displays your total score on the results page. See [Features](#features) to watch how to save your score and play again!
 
-insert Video from start button to results screen displayed then play agian is pressed
+
+![Example screenshot of start page](./assets/images/start-box-example.png)
+![Example screenshot of question page](./assets/images/question-box-example.png)
+![Example screenshot of results page](./assets/images/results-box-example.png)
 
 ## Credits
 
