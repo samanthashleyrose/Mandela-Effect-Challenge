@@ -110,7 +110,7 @@ p {
 }
 
 #feedback-message {
-    font-size: var(--answer-button-font-size);
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -234,7 +234,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: .65rem;
     }
@@ -279,7 +278,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: .7rem;
     }
@@ -329,7 +327,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: .8rem;
     }
@@ -376,7 +373,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: .9rem;
     }
@@ -426,7 +422,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: .95rem;
     }
@@ -479,7 +474,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: 1rem;
     }
@@ -532,7 +526,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: 1.1rem;
     }
@@ -582,7 +575,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: 1.2rem;
     }
@@ -632,7 +624,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: 1.4rem;
     }
@@ -685,7 +676,6 @@ input {
     #choiceB,
     h2,
     h3,
-    #feedback-message,
     #end-game-message{
         font-size: 1.4rem;
     }
@@ -731,7 +721,6 @@ input {
         font-size: 1.8rem;
         padding: 3.5%;
     }
-    #feedback-message,
     #end-game-message{
         font-size: 1.5rem;
     }
