@@ -59,11 +59,11 @@ After reading the description on the front page, click the "Start Quiz" button t
 
 ## Features
 
-Say you've finished the game with a score you want to remember, the results page has a built-in feature to complete that task. Go ahead and enter your initials/nickname into the field on the page and click submit. You'll immediately see your entered information display under Player History along with the date and time you played. Great! Now that your results are saved, want to give it another go? Click Play Again to reload the page! You can save your score an unlimited amount of time to track your progress and compare against other players as well. 
+Say you've finished the game with a score you want to remember, the results page has a built-in Player History Feature to complete that task. Go ahead and enter your initials/nickname into the field on the page and click submit. You'll immediately see your entered information display under Player History along with the date and time you played. Great! Now that your results are saved, want to give it another go? Click Play Again to reload the page! You can save your score an unlimited amount of time to track your progress and compare against other players as well. 
 
-insert Video on Saving your score!
+https://github.com/samanthashleyrose/module04-challenge/blob/main/assets/images/save-results-demo.mov
 
-The Player History Feature uses Local Storage to display the results onto the screen but they are also listed in Chrome Dev Tool under Applications for additional reference.
+The Player History Feature uses Local Storage to display the results onto the screen. The results are also listed in Chrome Dev Tools under Applications for additional reference.
 
 ## License
 
