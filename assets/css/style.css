@@ -194,25 +194,25 @@ input {
 /* XXS -- EX. iPhone 5/SE */
 @media (min-width: 300px) {
     .box-style {
-        margin-right: -10%;
+        margin-right: -30%;
     }
     p {
-        font-size: .42rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        font-size: .57rem;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     h1 {
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
     #start-box-title {
-        font-size: .7rem;
+        font-size: .9rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: .5rem;
-        padding: 2%;
-        border-width: 2px;
+        font-size: .6rem;
+        padding: 1.5%;
+        border-width: 2.5px;
     }
     input {
         height: 9px;
@@ -236,35 +236,35 @@ input {
     h3,
     #feedback-message,
     #end-game-message{
-        font-size: .5rem;
+        font-size: .65rem;
     }
     #players-list {
-        font-size: .4rem;
+        font-size: .5rem;
     }
 }
 
 /* XXS -- iPhone 14 Pro Max */
 @media (min-width: 363px) {
     .box-style {
-        margin-right: -10%;
+        margin-right: -30%;
     }
     p {
-        font-size: .59rem;
-        margin-left: 3%;
-        margin-right: 3%;
+        font-size: .69rem;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     h1 {
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
     #start-box-title {
-        font-size: .8rem;
+        font-size: 1rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: .5rem;
+        font-size: .7rem;
         padding: 1.5%;
-        border-width: 2px;
+        border-width: 3px;
     }
     #timer {
         font-size: .5rem;
@@ -281,33 +281,33 @@ input {
     h3,
     #feedback-message,
     #end-game-message{
-        font-size: .6rem;
+        font-size: .7rem;
     }
     input {
         width: 91%;
         height: 9px;
     }
     input::placeholder {
-        font-size: .5rem;
+        font-size: .6rem;
         text-align: center;
     }
     #players-list {
-        font-size: .5rem;
+        font-size: .65rem;
     }
 }
 
 /* XS */
 @media (min-width: 430px) {
     p {
-        font-size: .67rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        font-size: .7rem;
+        margin-left: 12%;
+        margin-right: 12%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     #start-btn,
     #results-submit,
@@ -348,15 +348,15 @@ input {
 /* XS */
 @media (min-width: 475px) {
     p {
-        font-size: .74rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        font-size: .76rem;
+        margin-left: 12%;
+        margin-right: 12%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
     #start-btn,
     #results-submit,
@@ -394,16 +394,19 @@ input {
 
 /* S -- EX. Microsoft Lumia 550 */
 @media (min-width: 640px) {
+    .box-style {
+        margin-right: -20%;
+    }
     p {
         font-size: .9rem;
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: 11%;
+        margin-right: 11%;
     }
     h1 {
         font-size: 1.4rem;
     }
     #start-box-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     #start-btn,
     #results-submit,
@@ -442,16 +445,19 @@ input {
 
 /* M -- EX. iPad */
 @media (min-width: 768px) {
+    .box-style {
+        margin-right: -20%;
+    }
     p {
         font-size: 1.1rem;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 11%;
+        margin-right: 11%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     #start-btn,
     #results-submit,
@@ -492,13 +498,16 @@ input {
 
 /* LG -- EX. iPad Pro */
 @media (min-width: 1024px) {
+    .box-style {
+        margin-right: -10%;
+    }
     p {
         font-size: 1.2rem;
         margin-left: 15%;
         margin-right: 15%;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     #start-box-title {
         font-size: 1.7rem;
@@ -548,7 +557,7 @@ input {
         margin-right: 17%;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     #start-box-title {
         font-size: 2rem;
