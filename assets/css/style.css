@@ -193,16 +193,19 @@ input {
 
 /* XXS -- EX. iPhone 5/SE */
 @media (min-width: 300px) {
+    .box-style {
+        margin-right: -10%;
+    }
     p {
         font-size: .42rem;
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     h1 {
         font-size: .8rem;
     }
     #start-box-title {
-        font-size: .8rem;
+        font-size: .7rem;
     }
     #start-btn,
     #results-submit,
@@ -242,10 +245,13 @@ input {
 
 /* XXS -- iPhone 14 Pro Max */
 @media (min-width: 363px) {
+    .box-style {
+        margin-right: -10%;
+    }
     p {
-        font-size: .5rem;
-        margin-left: 0%;
-        margin-right: 0%;
+        font-size: .59rem;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     h1 {
         font-size: .8rem;
@@ -293,7 +299,7 @@ input {
 /* XS */
 @media (min-width: 430px) {
     p {
-        font-size: .74rem;
+        font-size: .67rem;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -342,7 +348,7 @@ input {
 /* XS */
 @media (min-width: 475px) {
     p {
-        font-size: .8rem;
+        font-size: .74rem;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -389,15 +395,15 @@ input {
 /* S -- EX. Microsoft Lumia 550 */
 @media (min-width: 640px) {
     p {
-        font-size: .8rem;
-        margin-left: 0%;
-        margin-right: 0%;
+        font-size: .9rem;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     h1 {
         font-size: 1.4rem;
     }
     #start-box-title {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     #start-btn,
     #results-submit,
@@ -437,15 +443,15 @@ input {
 /* M -- EX. iPad */
 @media (min-width: 768px) {
     p {
-        font-size: 1rem;
-        margin-left: 0%;
-        margin-right: 0%;
+        font-size: 1.1rem;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     #start-btn,
     #results-submit,
@@ -487,21 +493,20 @@ input {
 /* LG -- EX. iPad Pro */
 @media (min-width: 1024px) {
     p {
-        font-size: 1rem;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size: 1.2rem;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 1.5%;
         border-width: 5px;
     }
@@ -538,21 +543,20 @@ input {
 /* XL LG -- EX. Nest Hub Max */
 @media (min-width: 1280px) {
     p {
-        font-size: 1.2rem;
-        margin-left: 15%;
-        margin-right: 15%;
+        font-size: 1.4rem;
+        margin-left: 17%;
+        margin-right: 17%;
     }
     h1 {
         font-size: 1.5rem;
     }
     #start-box-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1.1rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 1.5%;
         border-width: 5px;
     }
@@ -589,20 +593,20 @@ input {
 /* 2XL LG */
 @media (min-width: 1536px) {
     p {
-        font-size: 1.4rem;
-        margin-left: 15%;
-        margin-right: 15%;
+        font-size: 1.7rem;
+        margin-left: 17%;
+        margin-right: 17%;
     }
     h1 {
         font-size: 2rem;
     }
     #start-box-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 1.5%;
         border-width: 6px;
     }
@@ -638,21 +642,26 @@ input {
 
 /* 2XL LG -- Macbook Pro 16 inch */
 @media (min-width: 1700px) {
+    .box-style {
+        margin-right: 0%;
+    }
     p {
-        font-size: 1.4rem;
-        margin-left: 20%;
-        margin-right: 20%;
+        font-size: 1.6rem;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     h1 {
         font-size: 2rem;
     }
     #start-box-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        padding: 1.2%;
+        border-width: 6px;
     }
     #timer {
         font-size: .7rem;
@@ -679,24 +688,24 @@ input {
 /* 3XL LG */
 @media (min-width: 2000px) {
     p {
-        font-size: 1.5rem;
-        margin-left: 23%;
-        margin-right: 23%;
+        font-size: 1.7rem;
+        margin-left: 18%;
+        margin-right: 18%;
     }
     h1 {
         font-size: 2rem;
     }
     #start-box-title {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
     #start-btn {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         padding: 1%;
     }
     #results-submit,
     #play-again-btn {
-        font-size: 1.6rem;
-        padding: 1.5%;
+        font-size: 1.5rem;
+        padding: 1.2%;
         border-width: 6px;
     }
     #timer {
