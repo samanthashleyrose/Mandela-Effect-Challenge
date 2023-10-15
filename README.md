@@ -9,9 +9,9 @@ The quiz consists of 12 pop-culture related questions that you will need to answ
 Using HTML, CSS, and JavaScript I was able to create an interactive site to host the game. Making sure to properly write and organize the code allowed for each component to communicate efficiently with each other which made for successful functionality. During the creation of this project, I learned the value of:
 
 - The Document Object
-    - The Document Object in JavaScript has a multitude of properties and methods that can access and manipulate your HTML to provide creative functionality. For example, the Javascript uses the .getElementById method and .addEventListener method many times to communicate with the HTML to obtain goals like button pressing and displaying different boxes.
+    - The Document Object in JavaScript has a multitude of properties and methods that can access and manipulate your HTML to provide creative functionality. For example, the JavaScript uses the .getElementById method and .addEventListener method many times to communicate with the HTML to obtain goals like button pressing and displaying different boxes.
 - Local Storage
-    - What fun is a game if you can't keep track of the players scores? Local storage allows the site to save the current players information (name, score, date) so they can play the game again and compare their progress. In addition, the player could then compare their scores with any friends who choose play as well. 
+    - What fun is a game if you can't keep track of the players scores? Local storage allows the site to save the current players information (name, score, date) so they can play the game again and compare their progress. In addition, the player could then compare their scores with any friends who choose to play as well. 
 
 
 ## Table of Contents
@@ -39,8 +39,8 @@ After reading the description on the start page, click the "Start Quiz" button t
 
 #### Knowledge Assitance From:
 <li>Lee Warrick <link><a href="https://leewarrick.com/">Personal Portfolio</a></link></li>
-<li>Mia Ciasullo <link><a href="https://github.com/miacias/first-portfolio">GitHub Portfolio</a></link></li>
-<li>Janvier Mbilizi (Tutor) <link><a href="">insert GitHub Portfolio</a></link></li>
+<li>Mia Ciasullo <link><a href="https://github.com/miacias">GitHub Portfolio</a></link></li>
+<li>Janvier Mbilizi (Tutor)
 <li>Nicole Choiniere-Kroeker (Classmate) <link><a href="https://github.com/nchoin">GitHub Portfolio</a></link></li>
 
 #### Documentation Used:
