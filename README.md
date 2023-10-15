@@ -19,6 +19,7 @@ Using HTML, CSS, and JavaScript I was able to create an interactive site to host
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Features](#features)
 - [License](#license)
 
 ## Installation
