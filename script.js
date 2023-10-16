@@ -197,7 +197,7 @@ function handleAnswerClick(click) {
     // Remove the feedback message after a 1.5 second delay
     setTimeout(() => {
         feedbackMessage.textContent = '';
-    }, 1500);
+    }, 1000);
 
     currentQuestionIndex++;
     console.log('User Selected: ' + selectedAnswer + '. The correct answer is ' + currentQuestion.answer);
@@ -205,7 +205,7 @@ function handleAnswerClick(click) {
     if (currentQuestionIndex < questions.length) {
         setTimeout(() => {
             displayCurrentQuestion(); // Pauses for 1.5 seconds before moving to next question
-        }, 1500);
+        }, 1000);
     } else { // If no questions left
         gameCompleted();
         endGameMessage.textContent = 'Game Completed ☺';
