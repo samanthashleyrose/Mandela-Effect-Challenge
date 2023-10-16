@@ -194,7 +194,7 @@ function handleAnswerClick(click) {
         console.log('-10 seconds!!!');
     }
 
-    // Remove the feedback message after a 1.5 second delay
+    // Remove the feedback message after a 1 second delay
     setTimeout(() => {
         feedbackMessage.textContent = '';
     }, 1000);
@@ -204,7 +204,7 @@ function handleAnswerClick(click) {
   
     if (currentQuestionIndex < questions.length) {
         setTimeout(() => {
-            displayCurrentQuestion(); // Pauses for 1.5 seconds before moving to next question
+            displayCurrentQuestion(); // Pauses for 1 second before moving to next question
         }, 1000);
     } else { // If no questions left
         gameCompleted();
