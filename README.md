@@ -1,4 +1,4 @@
-# module04-challenge - Mandela Effect Challenge/Quiz
+# Mandela Effect Challenge/Quiz
 
 ## Description
 
