@@ -2,7 +2,7 @@
 
 ## Description
 
-How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another is eye-opening. Think you can beat the odds? -- Take the <link><a href="https://samanthashleyrose.github.io/module04-challenge/">Mandela Effect Challenge</a></link> and put your memory to the test!  
+How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another is eye-opening. Think you can beat the odds? -- Take the <link><a href="https://samanthashleyrose.github.io/Mandela-Effect-Challenge/">Mandela Effect Challenge</a></link> and put your memory to the test!  
 
 The quiz consists of 12 pop-culture related questions that you will need to answer within 2 minutes. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
 
