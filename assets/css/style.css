@@ -238,10 +238,11 @@ input {
         font-size: 1rem;
     }
     #players-list {
-        font-size: .5rem;
+        font-size: .8rem;
     }
 }
 
+/* XS */
 @media (min-width: 401px) and (max-width: 500px){
     .box-style {
         margin-right: -30%;
@@ -288,228 +289,90 @@ input {
         font-size: 1rem;
     }
     #players-list {
-        font-size: .5rem;
+        font-size: .8rem;
     }
 }
 
-/* XXS -- iPhone 14 Pro Max */
-/* @media (min-width: 363px) {
+/* S */
+@media (min-width: 501px) and (max-width: 600px){
     .box-style {
         margin-right: -30%;
     }
     p {
-        font-size: .69rem;
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 1.8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1rem;
+        padding: 1.5%;
+        border-width: 5px;
+    }
+    input {
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: .75rem;
+        text-align: center;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question {
+        font-size: 1.8rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1rem;
+    }
+    #players-list {
+        font-size: .8rem;
+    }
+}
+
+/* S */
+@media (min-width: 601px) and (max-width: 700px){
+    .box-style {
+        margin-right: -30%;
+    }
+    p {
+        font-size: 1rem;
         margin-left: 10%;
         margin-right: 10%;
     }
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     #start-box-title {
+        font-size: 1.8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
         font-size: 1rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: .7rem;
         padding: 1.5%;
-        border-width: 3px;
-    }
-    #timer {
-        font-size: .5rem;
-    }
-    #image {
-        max-width: 100%;
-    }
-    #question {
-        font-size: .8rem;
-    }
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: .7rem;
-    }
-    input {
-        width: 91%;
-        height: 9px;
-    }
-    input::placeholder {
-        font-size: .6rem;
-        text-align: center;
-    }
-    #players-list {
-        font-size: .65rem;
-    }
-} */
-
-/* XS */
-/* @media (min-width: 430px) {
-    p {
-        font-size: .7rem;
-        margin-left: 12%;
-        margin-right: 12%;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    #start-box-title {
-        font-size: 1.1rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: .7rem;
-        padding: 1.5%;
-        border-width: 3px;
-    }
-    #timer {
-        font-size: .7rem;
-    }
-    #image {
-        max-width: 100%;
-    }
-    #question {
-        font-size: 1rem;
-    }
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: .8rem;
-    }
-    input {
-        height: 9px;
-    }
-    input::placeholder {
-        font-size: .6rem;
-        text-align: center;
-    }
-    #players-list {
-        font-size: .6rem;
-    }
-} */
-
-/* XS */
-@media (min-width: 475px) {
-    p {
-        font-size: .76rem;
-        margin-left: 12%;
-        margin-right: 12%;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    #start-box-title {
-        font-size: 1.2rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: .9rem;
-        padding: 1.5%;
-        border-width: 3px;
-    }
-    #timer {
-        font-size: .7rem;
-    }
-    #image {
-        max-width: 100%;
-    }
-    #question,
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: .9rem;
-    }
-    input {
-        height: 9px;
-    }
-    input::placeholder {
-        font-size: .65rem;
-        text-align: center;
-    }
-    #players-list {
-        font-size: .7rem;
-    }
-}
-
-/* S -- EX. Microsoft Lumia 550 */
-@media (min-width: 640px) {
-    .box-style {
-        margin-right: -20%;
-    }
-    p {
-        font-size: .9rem;
-        margin-left: 11%;
-        margin-right: 11%;
-    }
-    h1 {
-        font-size: 1.4rem;
-    }
-    #start-box-title {
-        font-size: 1.5rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: .9rem;
-        padding: 1.5%;
-        border-width: 4px;
-    }
-    #timer {
-        font-size: .7rem;
-    }
-    #image {
-        max-width: 100%;
-    }
-    #question,
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: .95rem;
+        border-width: 5px;
     }
     input {
         height: 10px;
-        width: 91%;
     }
     input::placeholder {
-        font-size: .7rem;
-        text-align: center;
-    }
-    #players-list {
         font-size: .75rem;
-    }
-}
-
-/* M -- EX. iPad */
-@media (min-width: 768px) {
-    .box-style {
-        margin-right: -20%;
-    }
-    p {
-        font-size: 1.1rem;
-        margin-left: 11%;
-        margin-right: 11%;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    #start-box-title {
-        font-size: 1.6rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: 1rem;
-        padding: 1.5%;
-        border-width: 5px;
+        text-align: center;
     }
     #timer {
         font-size: .7rem;
@@ -518,7 +381,7 @@ input {
         max-width: 100%;
     }
     #question {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     #choiceA,
     #choiceB,
@@ -527,77 +390,71 @@ input {
     #end-game-message{
         font-size: 1rem;
     }
+    #players-list {
+        font-size: .8rem;
+    }
+}
+
+/* M */
+@media (min-width: 701px) and (max-width: 800px){
+    .box-style {
+        margin-right: -30%;
+    }
+    p {
+        font-size: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 1.8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1rem;
+        padding: 1.5%;
+        border-width: 5px;
+    }
     input {
         height: 10px;
-        width: 91%;
     }
     input::placeholder {
         font-size: .8rem;
         text-align: center;
     }
-    #players-list {
-        font-size: .9rem;
-    }
-}
-
-/* LG -- EX. iPad Pro */
-@media (min-width: 1024px) {
-    .box-style {
-        margin-right: -10%;
-    }
-    p {
-        font-size: 1.2rem;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    h1 {
-        font-size: 1.7rem;
-    }
-    #start-box-title {
-        font-size: 1.7rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: 1.1rem;
-        padding: 1.5%;
-        border-width: 5px;
-    }
     #timer {
         font-size: .7rem;
     }
     #image {
-        max-width: 95%;
+        max-width: 100%;
     }
     #question {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     #choiceA,
     #choiceB,
     h2,
     h3,
     #end-game-message{
-        font-size: 1.1rem;
-    }
-    input {
-        height: 10px;
-        width: 91%;
-    }
-    input::placeholder {
-        font-size: .9rem;
-        text-align: center;
+        font-size: 1rem;
     }
     #players-list {
-        font-size: 1rem;
+        font-size: .85rem;
     }
 }
 
-/* XL LG -- EX. Nest Hub Max */
-@media (min-width: 1280px) {
+/* LG */
+@media (min-width: 801px) and (max-width: 900px){
+    .box-style {
+        margin-right: -30%;
+    }
     p {
-        font-size: 1.4rem;
-        margin-left: 17%;
-        margin-right: 17%;
+        font-size: 1.2rem;
+        margin-left: 14%;
+        margin-right: 14%;
     }
     h1 {
         font-size: 1.8rem;
@@ -608,43 +465,211 @@ input {
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 1.5%;
-        border-width: 5px;
+        border-width: 6px;
+    }
+    input {
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: .8rem;
+        text-align: center;
     }
     #timer {
-        font-size: .7rem;
+        font-size: 1rem;
     }
     #image {
-        max-width: 95%;
+        max-width: 100%;
     }
     #question {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     #choiceA,
     #choiceB,
     h2,
     h3,
     #end-game-message{
+        font-size: 1.1rem;
+    }
+    #players-list {
+        font-size: .9rem;
+    }
+}
+
+/* LG */
+@media (min-width: 901px) and (max-width: 1000px){
+    .box-style {
+        margin-right: -30%;
+        max-width: 70%;
+    }
+    p {
         font-size: 1.2rem;
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 2rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.1rem;
+        padding: 1.5%;
+        border-width: 6px;
     }
     input {
-        height: 11px;
-        width: 91%;
+        height: 10px;
     }
     input::placeholder {
-        font-size: .95rem;
+        font-size: .8rem;
         text-align: center;
+    }
+    #timer {
+        font-size: 1rem;
+    }
+    #image {
+        max-width: 80%;
+    }
+    #question {
+        font-size: 2rem;
+    }
+    #choiceA,
+    #choiceB {
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1.1rem;
+    }
+    #players-list {
+        font-size: .9rem;
+    }
+}
+
+/* XL */
+@media (min-width: 1001px) and (max-width: 1500px){
+    .box-style {
+        margin-right: -30%;
+        max-width: 60%;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 2.1rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.2rem;
+        padding: 1.1%;
+        border-width: 6px;
+    }
+    input {
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: .8rem;
+        text-align: center;
+    }
+    #timer {
+        font-size: 1rem;
+    }
+    #image {
+        max-width: 80%;
+    }
+    #question {
+        font-size: 2rem;
+    }
+    #choiceA,
+    #choiceB {
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1.1rem;
+    }
+    #players-list {
+        font-size: .9rem;
+    }
+}
+
+/* 2XL */ 
+@media (min-width: 1501px) and (max-width: 2000px){
+    .box-style {
+        margin-right: -30%;
+        max-width: 40%;
+    }
+    p {
+        font-size: 1.3rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 2.4rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1.3rem;
+        padding: 1.1%;
+        border-width: 7px;
+    }
+    input {
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: .8rem;
+        text-align: center;
+    }
+    #timer {
+        font-size: 1rem;
+    }
+    #image {
+        max-width: 80%;
+    }
+    #question {
+        font-size: 2.4rem;
+    }
+    #choiceA,
+    #choiceB {
+        font-size: 1.3rem;
+        max-width: 80%;
+    }
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1.2rem;
     }
     #players-list {
         font-size: 1rem;
     }
 }
 
-/* 2XL LG */
-@media (min-width: 1536px) {
+/* 3XL */
+@media (min-width: 2001px) and (max-width: 2500px){
+    .box-style {
+        margin-right: -30%;
+        max-width: 27%;
+    }
     p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         margin-left: 17%;
         margin-right: 17%;
     }
@@ -657,105 +682,16 @@ input {
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: 1.5rem;
-        padding: 1.5%;
-        border-width: 6px;
-    }
-    #timer {
-        font-size: .7rem;
-    }
-    #image {
-        max-width: 95%;
-    }
-    #question {
-        font-size: 2rem;
-    }
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        padding: 1.1%;
+        border-width: 7px;
     }
     input {
-        height: 12px;
-        width: 91%;
+        height: 10px;
     }
     input::placeholder {
-        font-size: 1rem;
+        font-size: .8rem;
         text-align: center;
-    }
-    #players-list {
-        font-size: 1.2rem;
-    }
-} 
-
-/* 2XL LG -- Macbook Pro 16 inch */
-@media (min-width: 1700px) {
-    .box-style {
-        margin-right: 0%;
-    }
-    p {
-        font-size: 1.6rem;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    #start-box-title {
-        font-size: 2.4rem;
-    }
-    #start-btn,
-    #results-submit,
-    #play-again-btn {
-        font-size: 1.5rem;
-        padding: 1.2%;
-        border-width: 6px;
-    }
-    #timer {
-        font-size: .7rem;
-    }
-    #image {
-        max-width: 95%;
-    }
-    #question {
-        font-size: 2rem;
-    }
-    #choiceA,
-    #choiceB,
-    h2,
-    h3,
-    #end-game-message{
-        font-size: 1.4rem;
-    }
-    #players-list {
-        font-size: 1.2rem;
-    }
-} 
-
-/* 3XL LG */
-@media (min-width: 2000px) {
-    p {
-        font-size: 1.7rem;
-        margin-left: 18%;
-        margin-right: 18%;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    #start-box-title {
-        font-size: 2.8rem;
-    }
-    #start-btn {
-        font-size: 1.5rem;
-        padding: 1%;
-    }
-    #results-submit,
-    #play-again-btn {
-        font-size: 1.5rem;
-        padding: 1.2%;
-        border-width: 6px;
     }
     #timer {
         font-size: 1rem;
@@ -764,26 +700,19 @@ input {
         max-width: 90%;
     }
     #question {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
     #choiceA,
     #choiceB {
-        font-size: 1.8rem;
-        padding: 3.5%;
-    }
-    #end-game-message{
-        font-size: 1.5rem;
-    }
-    input {
-        height: 20px;
-        width: 91%;
-    }
-    input::placeholder {
         font-size: 1.3rem;
-        text-align: center;
+        max-width: 90%;
+    }
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1.2rem;
     }
     #players-list {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
-
