@@ -191,51 +191,101 @@ input {
 
 /* RESPONSIVENESS */
 
-/* XXS -- EX. iPhone 5/SE */
-@media (min-width: 300px) {
+/* XXS */
+@media (min-width: 300px) and (max-width: 400px){
     .box-style {
         margin-right: -30%;
     }
     p {
-        font-size: .57rem;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     h1 {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
     }
     #start-box-title {
-        font-size: .9rem;
+        font-size: 1.8rem;
     }
     #start-btn,
     #results-submit,
     #play-again-btn {
-        font-size: .6rem;
-        padding: 1.5%;
-        border-width: 2.5px;
+        font-size: 1rem;
+        padding: 1.8%;
+        border-width: 5px;
     }
     input {
-        height: 9px;
+        height: 10px;
     }
     input::placeholder {
-        font-size: .5rem;
+        font-size: .75rem;
         text-align: center;
     }
     #timer {
-        font-size: .4rem;
+        font-size: .7rem;
     }
     #image {
         max-width: 100%;
     }
     #question {
-        font-size: .7rem;
+        font-size: 1.8rem;
     }
     #choiceA,
     #choiceB,
     h2,
     h3,
     #end-game-message{
-        font-size: .65rem;
+        font-size: 1rem;
+    }
+    #players-list {
+        font-size: .5rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 500px){
+    .box-style {
+        margin-right: -30%;
+    }
+    p {
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    #start-box-title {
+        font-size: 1.8rem;
+    }
+    #start-btn,
+    #results-submit,
+    #play-again-btn {
+        font-size: 1rem;
+        padding: 1.8%;
+        border-width: 5px;
+    }
+    input {
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: .75rem;
+        text-align: center;
+    }
+    #timer {
+        font-size: .7rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #question {
+        font-size: 1.8rem;
+    }
+    #choiceA,
+    #choiceB,
+    h2,
+    h3,
+    #end-game-message{
+        font-size: 1rem;
     }
     #players-list {
         font-size: .5rem;
@@ -243,7 +293,7 @@ input {
 }
 
 /* XXS -- iPhone 14 Pro Max */
-@media (min-width: 363px) {
+/* @media (min-width: 363px) {
     .box-style {
         margin-right: -30%;
     }
@@ -292,10 +342,10 @@ input {
     #players-list {
         font-size: .65rem;
     }
-}
+} */
 
 /* XS */
-@media (min-width: 430px) {
+/* @media (min-width: 430px) {
     p {
         font-size: .7rem;
         margin-left: 12%;
@@ -340,7 +390,7 @@ input {
     #players-list {
         font-size: .6rem;
     }
-}
+} */
 
 /* XS */
 @media (min-width: 475px) {
