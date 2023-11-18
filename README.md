@@ -2,7 +2,7 @@
 
 ## Description
 
-How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another is eye-opening. Think you can beat the odds? -- Take the <link><a href="https://samanthashleyrose.github.io/Mandela-Effect-Challenge/">Mandela Effect Challenge</a></link> and put your memory to the test!  
+How accurate is your memory? The passing of Nelson Mandela in 2013 triggered a world wild realization that things aren't always how we remember them. People upon people began to compare their memories after distinctly remembering Mandela died in prison in the 1980s. The phenomenon is shocking to most, to think something happened one way when it was another is eye-opening. Think you can beat the odds? -- Take the <a href="https://samanthashleyrose.github.io/Mandela-Effect-Challenge/">Mandela Effect Challenge</a> and put your memory to the test!  
 
 The quiz consists of 12 pop-culture related questions that you will need to answer within 2 minutes. That being said, make sure you're certain of your answer. Every time an answer is chosen incorrectly, 10 seconds will be deducted from your current time.
 
@@ -38,24 +38,24 @@ After reading the description on the start page, click the "Start Quiz" button t
 ## Credits
 
 #### Knowledge Assitance From:
-<li>Lee Warrick <link><a href="https://leewarrick.com/">Personal Portfolio</a></link></li>
-<li>Mia Ciasullo <link><a href="https://github.com/miacias">GitHub Portfolio</a></link></li>
+<li>Lee Warrick <a href="https://leewarrick.com/">Personal Portfolio</a></li>
+<li>Mia Ciasullo <a href="https://github.com/miacias">GitHub Portfolio</a></li>
 <li>Janvier Mbilizi (Tutor)
-<li>Nicole Choiniere-Kroeker (Classmate) <link><a href="https://github.com/nchoin">GitHub Portfolio</a></link></li>
+<li>Nicole Choiniere-Kroeker (Classmate) <a href="https://github.com/nchoin">GitHub Portfolio</a></li>
 
 #### Documentation Used:
 
-<li><link><a href="https://chat.openai.com/">ChatGPT</a></link></li>
-<li><link><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">MDN Web Docs z-index</a></link></li>
-<li><link><a href="https://www.w3schools.com/js/js_json_parse.asp">W3schools JSON.parse()</a></link></li>
-<li><link><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">W3schools Window setTimeout()</a></link></li>
-<li><link><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"> Countdown Timer - Stackoverflow</a></link></li>
-<li><link><a href="https://stackoverflow.com/questions/40723239/i-need-some-explanation-for-some-of-this-code"> Timer Explanation - Stackoverflow</a></link></li>
-<li><link><a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">W3schools Javascript Date toLocaleString</a></link></li>
-<li><link><a href="https://www.w3schools.com/js/js_htmldom_document.asp">W3schools Javascript HTML DOM Document</a></link></li>
-<li><link><a href="https://simplestepscode.com/javascript-quiz-tutorial/">How to make a simple JavaScript quiz - Simple Steps Code</a></link></li>
-<li><link><a href="https://www.youtube.com/watch?v=WUBhpSRS_fk">Create a Quiz App with Timer using HTML CSS & JavaScript | CodingNepal - YouTube</a></link></li>
-<li><link><a href="https://www.goodhousekeeping.com/life/entertainment/g28438966/mandela-effect-examples/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_d_bm_prog_org_us_g28438966&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzEm3ILlTVFh9cMIXKPhYzc6PSgRWb6MrEcwgHy8IygZhuaA6ZZ4rTxoCr_cQAvD_BwE">53 Mandela Effect Examples That Will Make Question Everything - Good Housekeeping</a></link></li>
+<li><a href="https://chat.openai.com/">ChatGPT</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">MDN Web Docs z-index</a></li>
+<li><a href="https://www.w3schools.com/js/js_json_parse.asp">W3schools JSON.parse()</a></li>
+<li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">W3schools Window setTimeout()</a></li>
+<li><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"> Countdown Timer - Stackoverflow</a></li>
+<li><a href="https://stackoverflow.com/questions/40723239/i-need-some-explanation-for-some-of-this-code"> Timer Explanation - Stackoverflow</a></li>
+<li><a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">W3schools Javascript Date toLocaleString</a></li>
+<li><a href="https://www.w3schools.com/js/js_htmldom_document.asp">W3schools Javascript HTML DOM Document</a></li>
+<li><a href="https://simplestepscode.com/javascript-quiz-tutorial/">How to make a simple JavaScript quiz - Simple Steps Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=WUBhpSRS_fk">Create a Quiz App with Timer using HTML CSS & JavaScript | CodingNepal - YouTube</a></li>
+<li><a href="https://www.goodhousekeeping.com/life/entertainment/g28438966/mandela-effect-examples/?utm_source=google&utm_medium=cpc&utm_campaign=arb_ga_ghk_d_bm_prog_org_us_g28438966&gclid=CjwKCAjwvfmoBhAwEiwAG2tqzEm3ILlTVFh9cMIXKPhYzc6PSgRWb6MrEcwgHy8IygZhuaA6ZZ4rTxoCr_cQAvD_BwE">53 Mandela Effect Examples That Will Make Question Everything - Good Housekeeping</a></li>
 
 ## Features
 
